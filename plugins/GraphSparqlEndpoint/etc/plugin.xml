@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+   id="GraphSparqlEndpointPlugin"
+   iconfile="iconGraphSparqlendpoint.png"
+   description="Graph Sparql Query"
+   tooltip="Execute a DESCRIBE or a CONSTRUCT command on SPARQL 1.1 Endpoint and returns SubjectItem RDF Graphs."
+   category="LinkedDataBR"
+   classname="br.ufrj.ppgi.greco.kettle.GraphSparqlStepMeta">
+   <libraries>
+		<library name="GraphSparqlEndpoint.jar"/>
+		<library name="lib/KettlePluginTools-1.0.jar"/>
+		<library name="lib/jena-core-{apache.jena.version}.jar"/>
+		<library name="lib/jena-base-{apache.jena.version}.jar"/>
+		<library name="lib/jena-shaded-guava-{apache.jena.version}.jar"/>
+		<library name="lib/jena-arq-{apache.jena.version}.jar"/>
+		<library name="lib/jena-iri-{apache.jena.version}.jar"/>
+		<library name="lib/libthrift-{apache.libthrift.version}.jar"/>
+		<library name="lib/commons-compress-{apache.commons-compress.version}.jar"/>
+		<library name="lib/xstream-{xstream.version}.jar"/>	
+		<library name="lib/xmlpull-{xmlpull.version}.jar"/>
+    </libraries>
+    <localized_category>
+     <category locale="en_US">LinkedDataBR</category>
+     <category locale="pt_BR">LinkedDataBR</category>
+   </localized_category>
+   <localized_description>
+     <description locale="en_US">Graph Sparql Query</description>
+    <description locale="pt_BR">Graph Sparql Query</description>
+   </localized_description>
+   <localized_tooltip>
+     <tooltip locale="en_US">Execute a DESCRIBE or a CONSTRUCT command on SPARQL 1.1 Endpoint and returns SubjectItem RDF Graphs.</tooltip>
+    <tooltip locale="pt_BR">Executa um DESCRIBE ou CONSTRUCT num endpoin SPARQL 1.1 e retorna um grafo RDF.</tooltip>
+   </localized_tooltip>
+</plugin>
