@@ -1,0 +1,237 @@
+#QUERY
+#Extração de Metadados serializados anotados com DCAT
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dct: <http://purl.org/dc/terms/>
+select ?portal ?DS ?titleDS ?publicador ?nomeOrg ?idDistrib ?titleDistrib ?endArquivo
+where {
+        ?portal dcat:dataset ?DS .
+        ?DS dct:title ?titleDS .
+        ?DS dct:publisher ?publicador .
+        ?DS dcat:distribution ?Distrib .
+        ?Distrib dct:title ?titleDistrib .
+        ?Distrib dct:identifier ?idDistrib.
+        ?Distrib dcat:downloadURL ?endArquivo .
+        ?publicador foaf:name ?nomeOrg.
+
+}
+#QUERY
+#Obtém as classes utilizadas por sujeitos e objetos anotadas com AGROVOC; também busca o conceito na DBpedia e se encontrar extrai a classe da DBpedia.
+PREFIX lodbr: <http://lodbr.ufrj.br/agrotoxicos/propriedade/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?ClasseConceito1 ?ClasseConceitoLabel1 ?ClasseConceito2 ?ClasseConceitoLabel2 where {
+    {
+            service <http://192.168.1.102:7200/repositories/graphdb-repo-test> {
+            graph <#graphToQuery> {
+                ?s ?p ?o .
+                #Extrai sujeitos
+                FILTER (isURI(?s) && !(strstarts(str(?s), str("http://www.w3.org"))) && contains(str(?s), "agrovoc")) .
+                #Esta string com endpoint pode ser parametrizada
+                BIND (uri("http://agrovoc.uniroma2.it/sparql") AS ?vEndpoint ) .
+            	}
+    		}
+
+        	service ?vEndpoint {
+            	?s skos:broader ?ClasseConceito1 .
+            	?ClasseConceito1 skos:prefLabel ?ClasseConceitoLabel1 .
+            	FILTER (lang(?ClasseConceitoLabel1) = "pt" ) .
+            	OPTIONAL {?s ?predicadoMatch ?ClasseDBpedia .
+                        FILTER (?predicadoMatch = skos:closeMatch || ?predicadoMatch = skos:exactMatch) .
+        		        service silent <http://dbpedia.org/sparql> {
+            				?ClasseDBpedia rdf:type ?ClasseConceito2 .
+                    		?ClasseConceito2 rdfs:isDefinedBy <http://dbpedia.org/ontology/> .
+            				?ClasseConceito2 rdfs:label ?ClasseConceitoLabel2 .
+            				FILTER (lang(?ClasseConceitoLabel2) = "pt" ) .
+                		}
+            	}
+        	}
+} #fim- 1o.union
+union {
+            service <http://192.168.1.102:7200/repositories/graphdb-repo-test> {
+                graph <#graphToQuery> {
+                    ?s ?p ?o .
+                    #Extrai objetos
+                   FILTER (isURI(?o) && !(strstarts(str(?o), str("http://www.w3.org"))) && contains(str(?o), "agrovoc")).
+                    #Esta string com endpoint pode ser parametrizada
+                    BIND (uri("http://agrovoc.uniroma2.it/sparql") AS ?vEndpoint ) .
+                }
+        	}
+
+        	service ?vEndpoint {
+	            ?o skos:broader ?ClasseConceito1 .
+    	        ?ClasseConceito1 skos:prefLabel ?ClasseConceitoLabel1 .
+                FILTER (lang(?ClasseConceitoLabel1) = "pt" ) .
+	            OPTIONAL { ?o ?predicadoMatch ?ClasseDBpedia .
+                	FILTER (?predicadoMatch = skos:closeMatch || ?predicadoMatch = skos:exactMatch) .
+            		service silent <http://dbpedia.org/sparql> {
+        	    		?ClasseDBpedia rdf:type ?ClasseConceito2 .
+                    	?ClasseConceito2 rdfs:isDefinedBy <http://dbpedia.org/ontology/> .
+        	    		?ClasseConceito2 rdfs:label ?ClasseConceitoLabel2 .
+                    	FILTER (lang(?ClasseConceitoLabel2) = "pt" ) .
+                	}
+            	}
+        	}
+} #fim-union suj-obj
+} #fim-where
+order by ?ClasseConceito1
+#QUERY
+#Obtém as classes utilizadas por sujeitos e objetos anotadas com DBPEDIA.
+PREFIX lodbr: <http://lodbr.ufrj.br/agrotoxicos/propriedade/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+select distinct ?ClasseConceito ?ClasseConceitoLabel
+where {
+    	{service <http://192.168.1.102:7200/repositories/graphdb-repo-test> {
+        	graph <#graphToQuery> {
+                ?s ?p ?o .
+                #Extrai sujeitos
+                FILTER (isURI(?s) && !(strstarts(str(?s), str("http://www.w3.org"))) && contains(str(?s), "dbpedia")) .
+                BIND (uri("http://dbpedia.org/sparql") AS ?vEndpoint ) .
+                BIND (uri(replace(str(?s),"page","resource")) AS ?vSuj) .
+        	}
+    	}
+
+        service ?vEndpoint {
+            ?vSuj ?predicadoTipo ?ClasseConceito .
+            FILTER (?predicadoTipo = dbo:type || ?predicadoTipo = rdf:type || ?predicadoTipo = rdfs:subClassOf ) .
+        	FILTER (contains(str(?ClasseConceito), "dbpedia")) .
+            ?ClasseConceito rdfs:label ?ClasseConceitoLabel .
+            FILTER (lang(?ClasseConceitoLabel) = "pt" ) .
+        }
+	}
+union {
+        service <http://192.168.1.102:7200/repositories/graphdb-repo-test> {
+            graph <#graphToQuery> {
+                ?s ?p ?o .
+                #Extrai objetos
+                FILTER (isURI(?o) && !(strstarts(str(?o), str("http://www.w3.org"))) && contains(str(?o), "dbpedia")) .
+                BIND (uri("http://dbpedia.org/sparql") AS ?vEndpoint ) .
+                BIND (uri(replace(str(?o),"page","resource")) AS ?vObj) .
+			}
+        }
+
+
+        service ?vEndpoint {
+            ?vObj ?predicadoTipo ?ClasseConceito .
+            FILTER (?predicadoTipo = dbo:type || ?predicadoTipo = rdf:type || ?predicadoTipo = rdfs:subClassOf ) .
+            FILTER (contains(str(?ClasseConceito), "dbpedia")) .
+			?ClasseConceito rdfs:label ?ClasseConceitoLabel .
+            FILTER (lang(?ClasseConceitoLabel) = "pt" ) .
+    	}
+	}
+}
+#QUERY
+#Obtém as classes utilizadas por sujeitos e objetos anotadas com CHEBI.
+PREFIX lodbr: <http://lodbr.ufrj.br/agrotoxicos/propriedade/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select distinct ?ClasseConceito ?ClasseConceitoLabel
+where {
+    	{service <http://192.168.1.102:7200/repositories/graphdb-repo-test> {
+            graph <#graphToQuery> {
+                ?s ?p ?o .
+            #Extrai sujeitos
+            FILTER (isURI(?s) && !(strstarts(str(?s), str("http://www.w3.org"))) && contains(lcase(str(?s)), "chebi")) .
+            BIND (uri("http://sparql.hegroup.org/sparql/") AS ?vEndpoint ) .
+            }
+    	}
+
+        service ?vEndpoint {
+            GRAPH <http://purl.obolibrary.org/obo/merged/CHEBI> {
+            	?s rdfs:subClassOf ?ClasseConceito .
+            	?ClasseConceito rdfs:label ?ClasseConceitoLabel .
+            }
+        }
+}
+union {
+        service <http://192.168.1.102:7200/repositories/graphdb-repo-test> {
+            graph <#graphToQuery> {
+                ?s ?p ?o .
+            #Extrai objetos
+            FILTER (isURI(?o) && !(strstarts(str(?o), str("http://www.w3.org"))) && contains(lcase(str(?o)), "chebi")) .
+            BIND (uri("http://sparql.hegroup.org/sparql/") AS ?vEndpoint ) .
+            }
+        }
+
+        service ?vEndpoint {
+            GRAPH <http://purl.obolibrary.org/obo/merged/CHEBI> {
+            	?o rdfs:subClassOf ?ClasseConceito .
+            	?ClasseConceito rdfs:label ?ClasseConceitoLabel .
+            }
+        }
+
+}
+}
+#QUERY
+#Obtém as classes utilizadas por sujeitos e objetos anotadas com FOAF.
+#Obtém as classes utilizadas por sujeitos e objetos anotadas com FOAF.
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?ClasseConceito ?ClasseConceitoLabel where {
+	{graph <#graphToQuery> {
+        ?ClasseConceito ?p ?o .
+            #OPTIONAL { ?ClasseConceito ?p ?ClasseConceitoLabel . }
+        FILTER (isURI(?ClasseConceito) && contains(lcase(str(?ClasseConceito)), "foaf"))
+        }
+    }
+    union
+    {graph <#graphToQuery> {
+         ?s ?p ?ClasseConceito .
+            #OPTIONAL { ?ClasseConceito ?p ?ClasseConceitoLabel . }
+         FILTER (isURI(?ClasseConceito) && contains(lcase(str(?ClasseConceito)), "foaf")) }
+    }
+}
+#QUERY
+#Obtém as classes utilizadas por sujeitos e objetos anotadas com GEMET
+PREFIX lodbr: <http://lodbr.ufrj.br/agrotoxicos/propriedade/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select distinct ?ClasseConceito ?ClasseConceitoLabel where {
+    {
+            service <http://192.168.1.102:7200/repositories/graphdb-repo-test> {
+            graph <#graphToQuery> {
+                ?s ?p ?o .
+                #Extrai sujeitos
+                FILTER (isURI(?s) && !(strstarts(str(?s), str("http://www.w3.org"))) && contains(str(?s), "gemet")) .
+                #Esta string com endpoint pode ser parametrizada
+                BIND (uri("http://192.168.9.1:7200/repositories/Gemet_Thesaurus") AS ?vEndpoint ) .
+            	}
+    		}
+
+        	service ?vEndpoint {
+            	?s skos:broader ?ClasseConceito1 .
+            	?ClasseConceito1 skos:prefLabel ?ClasseConceitoLabel1 .
+            	FILTER (lang(?ClasseConceitoLabel) = "pt" ) .
+        	}
+} #fim- 1o.union
+union {
+            service <http://192.168.1.102:7200/repositories/graphdb-repo-test> {
+                graph <#graphToQuery> {
+                    ?s ?p ?o .
+                    #Extrai objetos
+                   FILTER (isURI(?o) && !(strstarts(str(?o), str("http://www.w3.org"))) && contains(str(?o), "gemet")).
+                    #Esta string com endpoint pode ser parametrizada
+                    BIND (uri("http://192.168.9.1:7200/repositories/Gemet_Thesaurus") AS ?vEndpoint ) .
+                }
+        	}
+
+        	service ?vEndpoint {
+	            ?o skos:broader ?ClasseConceito .
+    	        ?ClasseConceito skos:prefLabel ?ClasseConceitoLabel .
+                FILTER (lang(?ClasseConceitoLabel1) = "pt" ) .
+        	}
+} #fim-union suj-obj
+} #fim-where
+order by ?ClasseConceito

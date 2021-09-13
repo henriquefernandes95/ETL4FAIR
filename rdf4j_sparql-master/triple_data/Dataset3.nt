@@ -1,0 +1,455 @@
+<http://experimento1.org/grafo3/Formaldehyde> <http://www.w3.org/2004/02/skos/core#prefLabel> "Formaldehyde"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Formaldehyde> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "50-00-0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Formaldehyde> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "1,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Formaldehyde> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 62, 88, 100F"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Formaldehyde> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenobarbital> <http://www.w3.org/2004/02/skos/core#prefLabel> "Phenobarbital"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenobarbital> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "50-06-6"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenobarbital> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenobarbital> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 79"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenobarbital> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Mitomycin%20C> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mitomycin C"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Mitomycin%20C> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "50-07-7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Mitomycin%20C> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Mitomycin%20C> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "10, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Mitomycin%20C> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Cyclophosphamide> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cyclophosphamide"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Cyclophosphamide> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "50-18-0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Cyclophosphamide> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "1,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Cyclophosphamide> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "26, Sup 7, 100A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Cyclophosphamide> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Benzo%5Ba%5Dpyrene> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benzo[a]pyrene"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Benzo%5Ba%5Dpyrene> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "50-32-8"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Benzo%5Ba%5Dpyrene> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "1,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Benzo%5Ba%5Dpyrene> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 92, 100F"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Benzo%5Ba%5Dpyrene> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenylbutazone> <http://www.w3.org/2004/02/skos/core#prefLabel> "Phenylbutazone"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenylbutazone> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "50-33-9"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenylbutazone> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenylbutazone> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "13, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenylbutazone> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Clomiphene%20citrate> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clomiphene citrate"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Clomiphene%20citrate> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "50-41-9"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Clomiphene%20citrate> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Clomiphene%20citrate> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "21, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Clomiphene%20citrate> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/6-Mercaptopurine> <http://www.w3.org/2004/02/skos/core#prefLabel> "6-Mercaptopurine"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/6-Mercaptopurine> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "50-44-2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/6-Mercaptopurine> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/6-Mercaptopurine> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "26, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/6-Mercaptopurine> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Reserpine> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reserpine"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Reserpine> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "50-55-5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Reserpine> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Reserpine> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "24, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Reserpine> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Actinomycin%20D> <http://www.w3.org/2004/02/skos/core#prefLabel> "Actinomycin D"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Actinomycin%20D> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "50-76-0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Actinomycin%20D> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Actinomycin%20D> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "10, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Actinomycin%20D> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Pronetalol%20hydrochloride> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pronetalol hydrochloride"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Pronetalol%20hydrochloride> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "51-02-5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Pronetalol%20hydrochloride> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Pronetalol%20hydrochloride> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "13, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Pronetalol%20hydrochloride> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Piperonyl%20butoxide> <http://www.w3.org/2004/02/skos/core#prefLabel> "Piperonyl butoxide"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Piperonyl%20butoxide> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "51-03-6"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Piperonyl%20butoxide> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Piperonyl%20butoxide> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "30, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Piperonyl%20butoxide> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/2%2C4%2C6-Tris(1-aziridinyl)-s-triazine> <http://www.w3.org/2004/02/skos/core#prefLabel> "2,4,6-Tris(1-aziridinyl)-s-triazine"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/2%2C4%2C6-Tris(1-aziridinyl)-s-triazine> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "51-18-3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/2%2C4%2C6-Tris(1-aziridinyl)-s-triazine> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/2%2C4%2C6-Tris(1-aziridinyl)-s-triazine> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "9, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/2%2C4%2C6-Tris(1-aziridinyl)-s-triazine> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/5-Fluorouracil> <http://www.w3.org/2004/02/skos/core#prefLabel> "5-Fluorouracil"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/5-Fluorouracil> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "51-21-8"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/5-Fluorouracil> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/5-Fluorouracil> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "26, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/5-Fluorouracil> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Propylthiouracil> <http://www.w3.org/2004/02/skos/core#prefLabel> "Propylthiouracil"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Propylthiouracil> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "51-52-5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Propylthiouracil> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Propylthiouracil> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 79"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Propylthiouracil> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Nitrogen%20mustard> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nitrogen mustard"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Nitrogen%20mustard> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "51-75-2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Nitrogen%20mustard> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Nitrogen%20mustard> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "9, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Nitrogen%20mustard> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Urethane> <http://www.w3.org/2004/02/skos/core#prefLabel> "Urethane"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Urethane> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "51-79-6"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Urethane> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Urethane> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "7, Sup 7, 96"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Urethane> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Spironolactone> <http://www.w3.org/2004/02/skos/core#prefLabel> "Spironolactone"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Spironolactone> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "52-01-7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Spironolactone> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Spironolactone> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 79"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Spironolactone> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Thiotepa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Thiotepa"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Thiotepa> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "52-24-4"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Thiotepa> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "1,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Thiotepa> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 50, 100A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Thiotepa> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Apholate> <http://www.w3.org/2004/02/skos/core#prefLabel> "Apholate"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Apholate> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "52-46-0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Apholate> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Apholate> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "9, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Apholate> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Trichlorfon> <http://www.w3.org/2004/02/skos/core#prefLabel> "Trichlorfon"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Trichlorfon> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "52-68-6"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Trichlorfon> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Trichlorfon> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "30, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Trichlorfon> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Prednisone> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prednisone"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Prednisone> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "53-03-2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Prednisone> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Prednisone> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "26, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Prednisone> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Dibenz%5Ba%2Ch%5Danthracene%20> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dibenz[a,h]anthracene"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Dibenz%5Ba%2Ch%5Danthracene%20> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "53-70-3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Dibenz%5Ba%2Ch%5Danthracene%20> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Dibenz%5Ba%2Ch%5Danthracene%20> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 92"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Dibenz%5Ba%2Ch%5Danthracene%20> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloroquine> <http://www.w3.org/2004/02/skos/core#prefLabel> "Chloroquine"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloroquine> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "54-05-7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloroquine> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloroquine> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "13, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloroquine> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Frusemide> <http://www.w3.org/2004/02/skos/core#prefLabel> "Frusemide"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Frusemide> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "54-31-9"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Frusemide> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Frusemide> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "50,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Frusemide> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1990"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Isoniazid> <http://www.w3.org/2004/02/skos/core#prefLabel> "Isoniazid"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Isoniazid> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "54-85-3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Isoniazid> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Isoniazid> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "4, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Isoniazid> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-Nitrosodiethylamine> <http://www.w3.org/2004/02/skos/core#prefLabel> "N-Nitrosodiethylamine"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-Nitrosodiethylamine> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "55-18-5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-Nitrosodiethylamine> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-Nitrosodiethylamine> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "17, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-Nitrosodiethylamine> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Busulfan> <http://www.w3.org/2004/02/skos/core#prefLabel> "Busulfan"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Busulfan> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "55-98-1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Busulfan> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "1,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Busulfan> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "4, Sup 7, 100A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Busulfan> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methylthiouracil> <http://www.w3.org/2004/02/skos/core#prefLabel> "Methylthiouracil"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methylthiouracil> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "56-04-2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methylthiouracil> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methylthiouracil> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 79"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methylthiouracil> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Carbon%20tetrachloride> <http://www.w3.org/2004/02/skos/core#prefLabel> "Carbon tetrachloride"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Carbon%20tetrachloride> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "56-23-5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Carbon%20tetrachloride> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Carbon%20tetrachloride> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "20, Sup 7, 71"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Carbon%20tetrachloride> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Cantharidin> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cantharidin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Cantharidin> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "56-25-7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Cantharidin> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Cantharidin> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "10, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Cantharidin> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Diethylstilbestrol> <http://www.w3.org/2004/02/skos/core#prefLabel> "Diethylstilbestrol"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Diethylstilbestrol> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "56-53-1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Diethylstilbestrol> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "1,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Diethylstilbestrol> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "21, Sup 7, 100A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Diethylstilbestrol> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Benz%5Ba%5Danthracene> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benz[a]anthracene"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Benz%5Ba%5Danthracene> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "56-55-3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Benz%5Ba%5Danthracene> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Benz%5Ba%5Danthracene> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "92, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Benz%5Ba%5Danthracene> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloramphenicol> <http://www.w3.org/2004/02/skos/core#prefLabel> "Chloramphenicol"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloramphenicol> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "56-75-7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloramphenicol> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloramphenicol> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 50"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloramphenicol> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1990"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Allyl%20isothiocyanate> <http://www.w3.org/2004/02/skos/core#prefLabel> "Allyl isothiocyanate"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Allyl%20isothiocyanate> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "57-06-7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Allyl%20isothiocyanate> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Allyl%20isothiocyanate> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "73, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Allyl%20isothiocyanate> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/1%2C1-Dimethylhydrazine> <http://www.w3.org/2004/02/skos/core#prefLabel> "1,1-Dimethylhydrazine"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/1%2C1-Dimethylhydrazine> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "57-14-7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/1%2C1-Dimethylhydrazine> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/1%2C1-Dimethylhydrazine> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "4, Sup 7, 71"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/1%2C1-Dimethylhydrazine> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Tris(2-methyl-1-aziridinyl)phosphine%20oxide> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tris(2-methyl-1-aziridinyl)phosphine oxide"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Tris(2-methyl-1-aziridinyl)phosphine%20oxide> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "57-39-6"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Tris(2-methyl-1-aziridinyl)phosphine%20oxide> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Tris(2-methyl-1-aziridinyl)phosphine%20oxide> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "9, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Tris(2-methyl-1-aziridinyl)phosphine%20oxide> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenytoin> <http://www.w3.org/2004/02/skos/core#prefLabel> "Phenytoin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenytoin> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "57-41-0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenytoin> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenytoin> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 66"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenytoin> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1996"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/beta-Propiolactone> <http://www.w3.org/2004/02/skos/core#prefLabel> "beta-Propiolactone"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/beta-Propiolactone> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "57-57-8"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/beta-Propiolactone> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/beta-Propiolactone> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "4, Sup 7, 71"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/beta-Propiolactone> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Sulfamethazine> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sulfamethazine"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Sulfamethazine> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "57-68-1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Sulfamethazine> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Sulfamethazine> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "79,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Sulfamethazine> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chlordane> <http://www.w3.org/2004/02/skos/core#prefLabel> "Chlordane"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chlordane> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "57-74-9"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chlordane> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chlordane> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 53, 79"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chlordane> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Cholesterol> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cholesterol"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Cholesterol> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "57-88-5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Cholesterol> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Cholesterol> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "31, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Cholesterol> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Caffeine> <http://www.w3.org/2004/02/skos/core#prefLabel> "Caffeine"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Caffeine> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "58-08-2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Caffeine> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Caffeine> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "51,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Caffeine> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1991"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Pyrimethamine> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pyrimethamine"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Pyrimethamine> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "58-14-0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Pyrimethamine> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Pyrimethamine> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "13, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Pyrimethamine> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Theophylline> <http://www.w3.org/2004/02/skos/core#prefLabel> "Theophylline"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Theophylline> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "58-55-9"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Theophylline> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Theophylline> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "51,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Theophylline> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1991"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Hydrochlorothiazide> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hydrochlorothiazide"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Hydrochlorothiazide> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "58-93-5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Hydrochlorothiazide> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Hydrochlorothiazide> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "50, 108"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Hydrochlorothiazide> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2016"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methotrexate> <http://www.w3.org/2004/02/skos/core#prefLabel> "Methotrexate"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methotrexate> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "59-05-2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methotrexate> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methotrexate> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "26, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methotrexate> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Nitrofurazone> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nitrofurazone"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Nitrofurazone> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "59-87-0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Nitrofurazone> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Nitrofurazone> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "50,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Nitrofurazone> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1990"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-Nitrosomorpholine> <http://www.w3.org/2004/02/skos/core#prefLabel> "N-Nitrosomorpholine"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-Nitrosomorpholine> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "59-89-2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-Nitrosomorpholine> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-Nitrosomorpholine> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "17, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-Nitrosomorpholine> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Acetamide> <http://www.w3.org/2004/02/skos/core#prefLabel> "Acetamide"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Acetamide> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "60-35-5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Acetamide> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Acetamide> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "7, Sup 7, 71"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Acetamide> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methimazole> <http://www.w3.org/2004/02/skos/core#prefLabel> "Methimazole"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methimazole> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "60-56-0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methimazole> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methimazole> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "79,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methimazole> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Dieldrin> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dieldrin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Dieldrin> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "60-57-1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Dieldrin> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Dieldrin> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "5, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Dieldrin> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Niridazole> <http://www.w3.org/2004/02/skos/core#prefLabel> "Niridazole"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Niridazole> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "61-57-4"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Niridazole> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Niridazole> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "13, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Niridazole> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Amitrole> <http://www.w3.org/2004/02/skos/core#prefLabel> "Amitrole"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Amitrole> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "61-82-5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Amitrole> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Amitrole> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "79, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Amitrole> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenacetin> <http://www.w3.org/2004/02/skos/core#prefLabel> "Phenacetin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenacetin> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "62-44-2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenacetin> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "1,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenacetin> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "24, Sup 7, 100A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenacetin> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethyl%20methanesulfonate> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ethyl methanesulfonate"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethyl%20methanesulfonate> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "62-50-0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethyl%20methanesulfonate> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethyl%20methanesulfonate> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "7, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethyl%20methanesulfonate> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Aniline> <http://www.w3.org/2004/02/skos/core#prefLabel> "Aniline"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Aniline> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "62-53-3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Aniline> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Aniline> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "27, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Aniline> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Thioacetamide> <http://www.w3.org/2004/02/skos/core#prefLabel> "Thioacetamide"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Thioacetamide> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "62-55-5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Thioacetamide> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Thioacetamide> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "7, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Thioacetamide> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Thiourea> <http://www.w3.org/2004/02/skos/core#prefLabel> "Thiourea"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Thiourea> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "62-56-6"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Thiourea> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Thiourea> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 79"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Thiourea> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Dichlorvos> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dichlorvos"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Dichlorvos> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "62-73-7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Dichlorvos> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Dichlorvos> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 53"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Dichlorvos> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1991"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-Nitrosodimethylamine> <http://www.w3.org/2004/02/skos/core#prefLabel> "N-Nitrosodimethylamine"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-Nitrosodimethylamine> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "62-75-9"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-Nitrosodimethylamine> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-Nitrosodimethylamine> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "17, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-Nitrosodimethylamine> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Carbaryl> <http://www.w3.org/2004/02/skos/core#prefLabel> "Carbaryl"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Carbaryl> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "63-25-2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Carbaryl> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Carbaryl> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "12, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Carbaryl> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenoxybenzamine%20hydrochloride> <http://www.w3.org/2004/02/skos/core#prefLabel> "Phenoxybenzamine hydrochloride"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenoxybenzamine%20hydrochloride> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "63-92-3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenoxybenzamine%20hydrochloride> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenoxybenzamine%20hydrochloride> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "24, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Phenoxybenzamine%20hydrochloride> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethanol> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ethanol"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethanol> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "64-17-5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethanol> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "1,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethanol> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "96, 100E"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethanol> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Diethyl%20sulfate> <http://www.w3.org/2004/02/skos/core#prefLabel> "Diethyl sulfate"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Diethyl%20sulfate> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "64-67-5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Diethyl%20sulfate> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Diethyl%20sulfate> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "54, 71"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Diethyl%20sulfate> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20methanesulfonate> <http://www.w3.org/2004/02/skos/core#prefLabel> "Methyl methanesulfonate"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20methanesulfonate> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "66-27-3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20methanesulfonate> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20methanesulfonate> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "7, Sup 7,  71"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20methanesulfonate> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Uracil%20mustard> <http://www.w3.org/2004/02/skos/core#prefLabel> "Uracil mustard"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Uracil%20mustard> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "66-75-1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Uracil%20mustard> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Uracil%20mustard> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "9, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Uracil%20mustard> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Nitrofurantoin> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nitrofurantoin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Nitrofurantoin> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "67-20-9"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Nitrofurantoin> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Nitrofurantoin> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "50,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Nitrofurantoin> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1990"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Furazolidone> <http://www.w3.org/2004/02/skos/core#prefLabel> "Furazolidone"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Furazolidone> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "67-45-8"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Furazolidone> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Furazolidone> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "31, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Furazolidone> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Isopropyl%20alcohol> <http://www.w3.org/2004/02/skos/core#prefLabel> "Isopropyl alcohol"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Isopropyl%20alcohol> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "67-63-0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Isopropyl%20alcohol> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Isopropyl%20alcohol> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "15, Sup 7, 71"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Isopropyl%20alcohol> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloroform> <http://www.w3.org/2004/02/skos/core#prefLabel> "Chloroform"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloroform> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "67-66-3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloroform> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloroform> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 73"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloroform> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Hexachloroethane> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hexachloroethane"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Hexachloroethane> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "67-72-1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Hexachloroethane> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Hexachloroethane> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "73,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Hexachloroethane> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Triaziquone> <http://www.w3.org/2004/02/skos/core#prefLabel> "Triaziquone"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Triaziquone> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "68-76-8"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Triaziquone> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Triaziquone> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "9, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Triaziquone> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ampicillin> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ampicillin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ampicillin> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "69-53-4"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ampicillin> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ampicillin> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "50,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ampicillin> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1990"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-methyl-N'-nitro-N-nitrosoguanidine> <http://www.w3.org/2004/02/skos/core#prefLabel> "N-methyl-N'-nitro-N-nitrosoguanidine"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-methyl-N'-nitro-N-nitrosoguanidine> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "70-25-7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-methyl-N'-nitro-N-nitrosoguanidine> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-methyl-N'-nitro-N-nitrosoguanidine> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "4, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/N-methyl-N'-nitro-N-nitrosoguanidine> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Hexachlorophene> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hexachlorophene"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Hexachlorophene> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "70-30-4"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Hexachlorophene> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Hexachlorophene> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "20, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Hexachlorophene> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Benzene> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benzene"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Benzene> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "71-43-2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Benzene> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "1,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Benzene> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "29, Sup 7. 100F"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Benzene> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/1%2C1%2C1-Trichloroethane> <http://www.w3.org/2004/02/skos/core#prefLabel> "1,1,1-Trichloroethane"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/1%2C1%2C1-Trichloroethane> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "71-55-6"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/1%2C1%2C1-Trichloroethane> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/1%2C1%2C1-Trichloroethane> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "20, Sup 7, 71"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/1%2C1%2C1-Trichloroethane> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Medroxyprogesterone%20acetate> <http://www.w3.org/2004/02/skos/core#prefLabel> "Medroxyprogesterone acetate"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Medroxyprogesterone%20acetate> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "71-58-9"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Medroxyprogesterone%20acetate> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Medroxyprogesterone%20acetate> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "21, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Medroxyprogesterone%20acetate> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Endrin> <http://www.w3.org/2004/02/skos/core#prefLabel> "Endrin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Endrin> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "72-20-8"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Endrin> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Endrin> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "5, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Endrin> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methoxychlor> <http://www.w3.org/2004/02/skos/core#prefLabel> "Methoxychlor"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methoxychlor> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "72-43-5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methoxychlor> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methoxychlor> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "20, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methoxychlor> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Trypan%20blue> <http://www.w3.org/2004/02/skos/core#prefLabel> "Trypan blue"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Trypan%20blue> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "72-57-1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Trypan%20blue> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Trypan%20blue> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "8, Sup 7"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Trypan%20blue> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1987"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20bromide> <http://www.w3.org/2004/02/skos/core#prefLabel> "Methyl bromide"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20bromide> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "74-83-9"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20bromide> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20bromide> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "41, Sup 7, 71"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20bromide> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethylene> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ethylene"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethylene> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "74-85-1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethylene> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethylene> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 60"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethylene> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1994"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20chloride> <http://www.w3.org/2004/02/skos/core#prefLabel> "Methyl chloride"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20chloride> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "74-87-3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20chloride> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20chloride> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "41, Sup 7, 71"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20chloride> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20iodide> <http://www.w3.org/2004/02/skos/core#prefLabel> "Methyl iodide"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20iodide> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "74-88-4"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20iodide> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20iodide> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "41, Sup 7, 71"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Methyl%20iodide> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloroethane> <http://www.w3.org/2004/02/skos/core#prefLabel> "Chloroethane"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloroethane> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "75-00-3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloroethane> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "3,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloroethane> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "52, 71"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Chloroethane> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Vinyl%20chloride> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vinyl chloride"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Vinyl%20chloride> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "75-01-4"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Vinyl%20chloride> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "1,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Vinyl%20chloride> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 97, 100F"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Vinyl%20chloride> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Vinyl%20fluoride> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vinyl fluoride"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Vinyl%20fluoride> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "75-02-5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Vinyl%20fluoride> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Vinyl%20fluoride> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 63, 97"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Vinyl%20fluoride> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Acetaldehyde> <http://www.w3.org/2004/02/skos/core#prefLabel> "Acetaldehyde"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Acetaldehyde> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "75-07-0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Acetaldehyde> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "2B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Acetaldehyde> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "36, Sup 7, 71"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Acetaldehyde> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "1999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethylene%20oxide> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ethylene oxide"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethylene%20oxide> <http://lodbr.ufrj.br/quimicos/propriedade/CASNo> "75-21-8"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethylene%20oxide> <http://lodbr.ufrj.br/quimicos/propriedade/Group> "1,0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethylene%20oxide> <http://lodbr.ufrj.br/quimicos/propriedade/Volume> "Sup 7, 60, 97, 100F"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo3/Ethylene%20oxide> <http://lodbr.ufrj.br/quimicos/propriedade/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .

@@ -1,0 +1,162 @@
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://xmlns.com/foaf/0.1/name> "ECOCERT BRASIL CERTIFICADORA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "BRASIL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "Minas Gerais"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "Ouro Preto"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/(ATINA)%20Patroc%C3%ADnio%20de%20S%C3%A3o%20Jos%C3%A9%20de%20Souza%20"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/ABDSUL%20-%20ASSOCIA%C3%87%C3%83O%20DE%20AGRICULTURA%20BIODN%C3%82MICA%20DO%20SUL> <http://xmlns.com/foaf/0.1/name> "ABDSUL - ASSOCIAÇÃO DE AGRICULTURA BIODNÂMICA DO SUL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ABDSUL%20-%20ASSOCIA%C3%87%C3%83O%20DE%20AGRICULTURA%20BIODN%C3%82MICA%20DO%20SUL> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "BRASIL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ABDSUL%20-%20ASSOCIA%C3%87%C3%83O%20DE%20AGRICULTURA%20BIODN%C3%82MICA%20DO%20SUL> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "Santa Catarina"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ABDSUL%20-%20ASSOCIA%C3%87%C3%83O%20DE%20AGRICULTURA%20BIODN%C3%82MICA%20DO%20SUL> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "Florianópolis"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ABDSUL%20-%20ASSOCIA%C3%87%C3%83O%20DE%20AGRICULTURA%20BIODN%C3%82MICA%20DO%20SUL> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/Aina%20Kombucha"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ABDSUL%20-%20ASSOCIA%C3%87%C3%83O%20DE%20AGRICULTURA%20BIODN%C3%82MICA%20DO%20SUL> <http://xmlns.com/foaf/0.1/mbox> "contato@ainakombucha.com.br"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ABDSUL%20-%20ASSOCIA%C3%87%C3%83O%20DE%20AGRICULTURA%20BIODN%C3%82MICA%20DO%20SUL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/ACEPI> <http://xmlns.com/foaf/0.1/name> "ACEPI"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ACEPI> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "BRASIL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ACEPI> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "Ceará"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ACEPI> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "Nova Russas"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ACEPI> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/ANTONIO%20MARQUE%20DE%20CARVALHO"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ACEPI> <http://xmlns.com/foaf/0.1/mbox> "acepiopac@yahoo.com.br ;"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ACEPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/AGRO%20ORG%C3%82NICA%20UBATUBA> <http://xmlns.com/foaf/0.1/name> "AGRO ORGÂNICA UBATUBA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRO%20ORG%C3%82NICA%20UBATUBA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "BRASIL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRO%20ORG%C3%82NICA%20UBATUBA> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "São Paulo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRO%20ORG%C3%82NICA%20UBATUBA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "Ubatuba"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRO%20ORG%C3%82NICA%20UBATUBA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/ALEXANDRE%20BALDASSIN%20GOMES%20NOVAIS"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRO%20ORG%C3%82NICA%20UBATUBA> <http://xmlns.com/foaf/0.1/mbox> "hidrouba@hotmail.com ; 96252514"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRO%20ORG%C3%82NICA%20UBATUBA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/name> "IBD CERTIFICAÇÕES LTDA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "BOLÍVIA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "ORURO"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/CRUZ%20VILLCA%20NEMESIO"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/mbox> "gparrientos@anapqui.org.bo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/name> "IBD CERTIFICAÇÕES LTDA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "BOLÍVIA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "LA PAZ"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/ASOCIACI%C3%93N%20NACIONAL%20DE%20PRODUCTORES%20DE%20QUINUA%20(ANAPQUI)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/mbox> "gparrientos@anapqui.org.bo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/name> "IBD CERTIFICAÇÕES LTDA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "ITÁLIA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "ESPOLETO"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/COSTA%20D%20ORO%20S.P.A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/mbox> "mc.emanuele@oliocostadoro.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://xmlns.com/foaf/0.1/name> "ECOCERT BRASIL CERTIFICADORA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "CHILE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "Romeral"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "Curicó"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/Copefrut%20S.a"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://xmlns.com/foaf/0.1/mbox> "copefrut@copefrut.cl"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/name> "IBD CERTIFICAÇÕES LTDA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "TURQUIA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "NIGDE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/DAVUT%20TUNCER"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/mbox> "osman@goknur.com.tr"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://xmlns.com/foaf/0.1/name> "AGRICONTROL S/A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "ESPANHA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "Cuenca"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "Las Pedroñeras"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/Dom%C3%ADnio%20de%20Punctum%20S.L."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://xmlns.com/foaf/0.1/mbox> "ruth.fernandez@dominiodepunctum.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/name> "IBD CERTIFICAÇÕES LTDA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "ITÁLIA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "SAN MARTINO IN PENSILIS"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/ABAFOODS%20MOLISE%20(IT002-1)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/mbox> "andrea.tomelleri@abafoods.it"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/name> "IBD CERTIFICAÇÕES LTDA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "TURQUIA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "TURQUIA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "ADANA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/ALI%20KARAKELLE"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/mbox> "osman@goknur.com.tr"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://xmlns.com/foaf/0.1/name> "ECOCERT BRASIL CERTIFICADORA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "PERU"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "Lima"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "Miraflores"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/ANDES%20ALIMENTOS%20Y%20BEBIDAS%20SAC"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://xmlns.com/foaf/0.1/mbox> "cristian@andesalimentos.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://xmlns.com/foaf/0.1/name> "AGRICONTROL S/A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "PARAGUAI"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "Itapúa"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "YATYTAY"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/Celso%20Cantero"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://xmlns.com/foaf/0.1/mbox> "bruno@indugrapa.com / d.echeverria@indugrapa.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://xmlns.com/foaf/0.1/name> "AGRICONTROL S/A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "ARGENTINA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "Santa Fé"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "Rosário"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/MBS%20Agroind%C3%BAstrias%20SRL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://xmlns.com/foaf/0.1/mbox> "54 341 421 7286 /; fberastegui@mbsagroinsdustrias.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/AGRICONTROL%20S%2FA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/name> "IBD CERTIFICAÇÕES LTDA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "PAQUISTÃO"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "Carachi"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/ARMCOM"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/mbox> "benzing@ceres-cert.de"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://xmlns.com/foaf/0.1/name> "ECOCERT BRASIL CERTIFICADORA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "FRANÇA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "Beauchêne"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "Beauchêne"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/BEJO%20PRODUCTION"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://xmlns.com/foaf/0.1/mbox> "j.jouanneau@bejo.fr"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/Kiwa%20BCS%20Brasil> <http://xmlns.com/foaf/0.1/name> "Kiwa BCS Brasil"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/Kiwa%20BCS%20Brasil> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "PORTUGAL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/Kiwa%20BCS%20Brasil> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "Guarda"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/Kiwa%20BCS%20Brasil> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "Vila Nova de Foz Côa"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/Kiwa%20BCS%20Brasil> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/Casa%20Agr%C3%ADcola%20Roboredo%20Madeira%2C%20AS"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/Kiwa%20BCS%20Brasil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://xmlns.com/foaf/0.1/name> "ECOCERT BRASIL CERTIFICADORA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "TUNÍSIA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "Sfax"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "Sfax"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/CHO%20Company%3A%20Soci%C3%A9t%C3%A9%20de%20Conditionnement%20des%20Huiles%20d%20Olives"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://xmlns.com/foaf/0.1/mbox> "cho@planet.tn"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/name> "IBD CERTIFICAÇÕES LTDA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "CHINA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "CHINA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "DALIAN"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/DALIAN%20BAIHUA%20GRAINS%20PROCESSING%20CO.%2C%20LTD.%20(CN002)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/mbox> "tc@huaenorganic.com; z393620804@hotmail.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://xmlns.com/foaf/0.1/name> "ECOCERT BRASIL CERTIFICADORA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "FILIPINAS"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "Davao del Sur"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/Coco%20Davao%2C%20Inc.%20(CDI)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://xmlns.com/foaf/0.1/mbox> "elsa_mejala@yahoo.com, organic@primexcoco.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/name> "IBD CERTIFICAÇÕES LTDA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "MÉXICO"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "ZAPOPAN"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/COMERCIALIZADORA%20NATURAGAVE%20SA%20DE%20CV%20(MX%20009-1)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/mbox> "calidad@grupopsa.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/name> "IBD CERTIFICAÇÕES LTDA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "ROMÊNIA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "TIMISOARA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/SC%20SOLOVERDE%20SRL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://xmlns.com/foaf/0.1/mbox> "r.gelati@soloverde.ro"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/IBD%20CERTIFICA%C3%87%C3%95ES%20LTDA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://xmlns.com/foaf/0.1/name> "ECOCERT BRASIL CERTIFICADORA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "BRASIL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "Paraná"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "Palmas"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/(APROSUDOESTE)%20Associa%C3%A7%C3%A3o%20de%20Produtores%20Organicos%20de%20Palmas%0A-APROPAL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://xmlns.com/foaf/0.1/name> "ECOCERT BRASIL CERTIFICADORA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Pais> "BRASIL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/UF> "Ceará"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Cidade> "Bela Cruz"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://lodbr.ufrj.br/organizacao/propriedade/Produtor> "http://experimento1.org/grafo2/(RESIBRAS)%20RAIMUNDO%20PEDRO%20DA%20CUNHA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://experimento1.org/grafo2/ECOCERT%20BRASIL%20CERTIFICADORA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .

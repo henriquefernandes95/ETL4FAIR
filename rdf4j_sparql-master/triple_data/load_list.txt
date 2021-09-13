@@ -1,0 +1,3 @@
+Dataset1_anotado.nt#URLhttp://localhost/dataset/comercializacao-ibama-2017/resource/aa1c8fcc-38cd-4d22-80a3-1956f569c32e/
+Dataset2.nt#URLhttp://localhost/en/dataset/cadastro-nacional-de-produtores-organicos1/resource/6cf61d33-087d-4e24-ade2-fec883376b4e/
+Dataset3.nt#URLhttp://localhost/en/dataset/classificacao-do-iarc-agencia-internacional-de-pesquisa-em-cancer/resource/c76e49aa-710a-438c-a2d7-112d3bb361e4/
