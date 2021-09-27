@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="copy-files-to-kettle"  >
+<target name="copy-files-to-kettle">
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\LoadTripleFile\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LoadTripleFile"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LoadTripleFile" overwrite="true">
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\LoadTripleFile/etc"/>
+  </copy>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\LoadTripleFile\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LoadTripleFile"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LoadTripleFile/lib" overwrite="true">
+    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\LoadTripleFile\target/lib"/>
+  </copy>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\LoadTripleFile\target\LoadTripleFile-1.1.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LoadTripleFile"/>
+  <copy file="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\LoadTripleFile\target/LoadTripleFile-1.1.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LoadTripleFile/LoadTripleFile.jar" overwrite="true"/>
+</target>
+</project>

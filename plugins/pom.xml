@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>br.ufrj.ppgi.greco.kettle</groupId>
+	<artifactId>plugins</artifactId>
+	<packaging>pom</packaging>
+	<version>2.0</version>
+
+	<name>ETL4LOD</name>
+	<description>Plugins do Kettle para uso de RDF</description>
+	<url>https://github.com/johncurcio/ETL4LODPlus.git</url>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.8</version>
+				<executions>
+					<execution>
+						<id>i18n-hack</id>
+						<phase>install</phase>
+						<inherited>false</inherited>
+						<configuration>
+							<target name="i18n-hack">
+								<echo message="Copying i18n files" />
+								<copy todir="${basedir}/Annotator/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+								<copy todir="${basedir}/LoadTripleFile/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+								<copy todir="${basedir}/DataCube/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+								<copy todir="${basedir}/DataPropertyMapping/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+								<copy todir="${basedir}/GraphTriplify/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+								<copy todir="${basedir}/GraphSemanticLevelMarker/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+								<copy todir="${basedir}/GraphSparqlEndpoint/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+								<copy todir="${basedir}/ntriplegenerator/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+								<copy todir="${basedir}/ObjectPropertyMapping/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+								<copy todir="${basedir}/OwlInput/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+								<copy todir="${basedir}/SparqlEndpoint/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+								<copy todir="${basedir}/SparqlRunQuery/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+								<copy todir="${basedir}/SparqlUpdateOutput/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+								<copy todir="${basedir}/TurtleGenerator/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<excludes>
+					<exclude>plugin/*.*</exclude>
+				</excludes>
+			</resource>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.properties</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>	
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+
+
+		<pdi.home>E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration</pdi.home>
+		<pdi.plugin.dir>plugins/steps/${project.name}</pdi.plugin.dir>
+		<pdi.plugin.lib_name>${project.artifactId}</pdi.plugin.lib_name>
+
+		<!-- To update any dependency, update their version here -->
+		<xstream.version>1.4.18</xstream.version> <!-- 1.4.10 -->
+		<xstream.xmlpull.version>1.1.3.1</xstream.xmlpull.version> 
+
+		<apache.http.version>4.4.1</apache.http.version> <!-- 4.4.1 -->
+		<apache.httpclient.version>4.5.13</apache.httpclient.version> <!-- 4.5.6 -->
+		<apache.httpcore.version>4.4.14</apache.httpcore.version> <!-- 4.4.10 -->
+		<apache.jena.version>3.17.0</apache.jena.version> <!-- 3.8.0 -->
+		<apache.commons-compress.version>1.21</apache.commons-compress.version> <!-- 1.13 -->
+		<apache.libthrift.version>0.15.0</apache.libthrift.version> <!-- 0.10.0 -->
+
+		<any23.version>2.4</any23.version> <!-- 2.2-->
+
+		<json.version>20210307</json.version> <!-- 20180718-->
+		<jackson.version>2.12.5</jackson.version> <!-- 2.9.7 -->
+		<json-ld.version>0.13.3</json-ld.version> <!-- 0.12.1 -->
+
+		<!-- parent dependencies -->
+		<pdi.version>9.2.0.0-290</pdi.version> <!-- 9.0-SNAPSHOT -->
+
+		<mysql.version>8.0.25</mysql.version> <!-- 5.1.35 -->
+		<psql.version>9.1-901.jdbc4</psql.version> <!-- 9.1-901.jdbc4 -->
+		<slf4j.version>1.7.32</slf4j.version> <!-- 1.7.6< -->
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>pentaho-public</id>
+			<name>Pentaho Public</name>
+			<url>http://nexus.pentaho.org/content/groups/omni</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</snapshots>
+		</repository>
+
+		<repository>
+			<id>project.local</id>
+			<name>project</name>
+			<url>file:${project.basedir}/repo</url>
+		</repository>
+
+		<repository>
+			<id>mvn-repo</id>
+			<name>Maven Repository</name>
+			<url>https://mvnrepository.com/artifact/</url>
+		</repository>
+
+		<repository>
+			<id>oss.sonatype.org-snapshot</id>
+			<url>http://oss.sonatype.org/content/repositories/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>pentaho-public</id>
+			<name>Pentaho Public</name>
+			<url>http://nexus.pentaho.org/content/groups/omni</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>pentaho-kettle</groupId>
+			<artifactId>kettle-core</artifactId>
+			<version>${pdi.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>pentaho-kettle</groupId>
+			<artifactId>kettle-engine</artifactId>
+			<version>${pdi.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>pentaho-kettle</groupId>
+			<artifactId>kettle-ui-swt</artifactId>
+			<version>${pdi.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>${psql.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.rdf4j</groupId>
+			<artifactId>rdf4j-bom</artifactId>
+			<version>3.7.2</version>
+			<type>pom</type>
+			<scope>import</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>br.ufrj.ppgi.greco.kettle</groupId>
+			<artifactId>KettlePluginTools</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+	</dependencies>
+
+	<modules>
+		<module>Annotator</module>
+		<module>LoadTripleFile</module>
+		<module>DataCube</module>
+		<module>DataPropertyMapping</module>
+		<module>GraphTriplify</module>
+		<module>GraphSemanticLevelMarker</module>
+		<module>GraphSparqlEndpoint</module>
+		<module>LinkDiscoveryTool</module>
+		<module>ntriplegenerator</module>
+		<module>ObjectPropertyMapping</module>
+		<module>OwlInput</module>
+		<module>SparqlEndpoint</module>
+		<module>SparqlRunQuery</module>
+		<module>SparqlUpdateOutput</module>
+		<module>TurtleGenerator</module>
+	</modules>
+</project>

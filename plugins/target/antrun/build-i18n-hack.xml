@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="i18n-hack"  >
+<target name="i18n-hack">
+  <echo message="Copying i18n files"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/Annotator/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/src/main/java"/>
+  </copy>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/LoadTripleFile/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/src/main/java"/>
+  </copy>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/DataCube/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/src/main/java"/>
+  </copy>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/DataPropertyMapping/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/src/main/java"/>
+  </copy>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/GraphTriplify/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/src/main/java"/>
+  </copy>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/GraphSemanticLevelMarker/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/src/main/java"/>
+  </copy>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/GraphSparqlEndpoint/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/src/main/java"/>
+  </copy>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/ntriplegenerator/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/src/main/java"/>
+  </copy>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/ObjectPropertyMapping/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/src/main/java"/>
+  </copy>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/OwlInput/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/src/main/java"/>
+  </copy>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/SparqlEndpoint/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/src/main/java"/>
+  </copy>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/SparqlRunQuery/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/src/main/java"/>
+  </copy>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/SparqlUpdateOutput/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/src/main/java"/>
+  </copy>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/TurtleGenerator/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins/src/main/java"/>
+  </copy>
+</target>
+</project>

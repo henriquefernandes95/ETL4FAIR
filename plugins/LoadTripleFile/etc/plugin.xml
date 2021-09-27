@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+   id="LoadTripleFile"
+   iconfile="iconLoadTripleFile.png"
+   description="LoadTripleFile"
+   tooltip="Load a triple file into a graph database."
+   category="LinkedDataBR"
+   classname="br.ufrj.ppgi.greco.kettle.LoadTripleFileStepMeta">
+   <libraries>
+		<library name="LoadTripleFile.jar"/>
+		<library name="lib/KettlePluginTools-1.0.jar"/>
+	</libraries>
+	
+	<localized_category>
+     <category locale="en_US">LinkedDataBR</category>
+     <category locale="pt_BR">LinkedDataBR</category>
+	</localized_category>
+	<localized_description>
+     <description locale="en_US">Load Triple File</description>
+	 <description locale="pt_BR">Load Triple File</description>
+	</localized_description>
+	<localized_tooltip>
+     <tooltip locale="en_US">Load a triple file into a graph database.</tooltip>
+	 <tooltip locale="pt_BR">Carrega um arquivo triplificado em um banco de dados em grafos.</tooltip>
+	</localized_tooltip>
+</plugin>

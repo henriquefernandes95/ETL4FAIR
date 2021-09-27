@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+   id="SparqlEndpoint"
+   iconfile="iconSparqlQuery.png"
+   description="Sparql Endpoint"
+   tooltip="Executes query against a SPARQL Endpoint and gets the information."
+   category="LinkedDataBR"
+   classname="br.ufrj.ppgi.greco.kettle.SparqlStepMeta">
+   <libraries>
+		<library name="SparqlEndpoint.jar"/>
+		<library name="lib/KettlePluginTools-1.0.jar"/>
+		<library name="lib/jena-core-{apache.jena.version}.jar"/>
+		<library name="lib/jena-base-{apache.jena.version}.jar"/>
+		<library name="lib/jena-shaded-guava-{apache.jena.version}.jar"/>
+		<library name="lib/jena-arq-{apache.jena.version}.jar"/>
+		<library name="lib/jena-iri-{apache.jena.version}.jar"/>
+		<library name="lib/libthrift-{apache.libthrift.version}.jar"/>
+		<library name="lib/commons-compress-{apache.commons-compress.version}.jar"/>
+		<library name="lib/xstream-{xstream.version}.jar"/>	
+		<library name="lib/xmlpull-{xmlpull.version}.jar"/>
+    </libraries>
+    <localized_category>
+     <category locale="en_US">LinkedDataBR</category>
+     <category locale="pt_BR">LinkedDataBR</category>
+   </localized_category>
+   <localized_description>
+     <description locale="en_US">Sparql Endpoint</description>
+    <description locale="pt_BR">Sparql Endpoint</description>
+   </localized_description>
+   <localized_tooltip>
+     <tooltip locale="en_US">Executes a SELECT query against a SPARQL Endpoint and gets the information.</tooltip>
+    <tooltip locale="pt_BR">Executa uma query SELECT num Endpoint SPARQL e retorna o seu resultado.</tooltip>
+   </localized_tooltip>
+</plugin>

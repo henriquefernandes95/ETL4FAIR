@@ -140,7 +140,7 @@ public class AnnotatorStepDialog extends BaseStepDialog implements StepDialogInt
 		wcSubject = new ComboVar(transMeta, shell, SWT.SINGLE | SWT.LEFT | SWT.BORDER);
 		props.setLook(wcSubject);
 		wcSubject.addModifyListener(lsMod);
-		fdcSubject = new FormData();
+		FormData fdcSubject = new FormData();
 		fdcSubject.left = new FormAttachment(middle, 0);
 		fdcSubject.right = new FormAttachment(100, 0);
 		fdcSubject.top = new FormAttachment(wStepname, margin);

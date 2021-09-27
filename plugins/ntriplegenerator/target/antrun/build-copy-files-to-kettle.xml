@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="copy-files-to-kettle"  >
+<target name="copy-files-to-kettle">
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\ntriplegenerator\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/ntriplegenerator"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/ntriplegenerator" overwrite="true">
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\ntriplegenerator/etc"/>
+  </copy>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\ntriplegenerator\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/ntriplegenerator"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/ntriplegenerator/lib" overwrite="true">
+    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\ntriplegenerator\target/lib"/>
+  </copy>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\ntriplegenerator\target\ntriplegenerator-1.1.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/ntriplegenerator"/>
+  <copy file="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\ntriplegenerator\target/ntriplegenerator-1.1.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/ntriplegenerator/ntriplegenerator.jar" overwrite="true"/>
+</target>
+</project>
