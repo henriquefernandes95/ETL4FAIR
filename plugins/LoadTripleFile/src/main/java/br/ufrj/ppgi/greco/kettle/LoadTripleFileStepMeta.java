@@ -37,7 +37,7 @@ import org.w3c.dom.Node;
 public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInterface {
 
 	public enum Field {
-		INPUT_SUBJECT_FIELD_NAME, INPUT_PREDICATE_FIELD_NAME, INPUT_OBJECT_FIELD_NAME, INPUT_GRAPH_FIELD_NAME, OUTPUT_NTRIPLE_FIELD_NAME, INNER_KEEP_INPUT_VALUE, INPUT_BROWSE_FILE_NAME,
+		INPUT_FILE_FORMAT_FIELD_NAME, INPUT_PREDICATE_FIELD_NAME, INPUT_OBJECT_FIELD_NAME, INPUT_GRAPH_FIELD_NAME, OUTPUT_NTRIPLE_FIELD_NAME, INNER_KEEP_INPUT_VALUE, INPUT_BROWSE_FILE_NAME,
 	}
 
 	// Campos Step - Input
@@ -93,7 +93,7 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 	@Override
 	public void loadXML(Node stepDomNode, List<DatabaseMeta> databases, Map<String, Counter> sequenceCounters)
 			throws KettleXMLException {
-		inputFileFormat = XMLHandler.getTagValue(stepDomNode, Field.INPUT_SUBJECT_FIELD_NAME.name());
+		inputFileFormat = XMLHandler.getTagValue(stepDomNode, Field.INPUT_FILE_FORMAT_FIELD_NAME.name());
 		inputExistsRepository = XMLHandler.getTagValue(stepDomNode, Field.INPUT_PREDICATE_FIELD_NAME.name());
 		inputRepoName = XMLHandler.getTagValue(stepDomNode, Field.INPUT_OBJECT_FIELD_NAME.name());
 		inputGraph = XMLHandler.getTagValue(stepDomNode, Field.INPUT_GRAPH_FIELD_NAME.name());
@@ -107,7 +107,7 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 	public String getXML() throws KettleException {
 		StringBuilder xml = new StringBuilder();
 
-		xml.append(XMLHandler.addTagValue(Field.INPUT_SUBJECT_FIELD_NAME.name(), inputFileFormat));
+		xml.append(XMLHandler.addTagValue(Field.INPUT_FILE_FORMAT_FIELD_NAME.name(), inputFileFormat));
 		xml.append(XMLHandler.addTagValue(Field.INPUT_PREDICATE_FIELD_NAME.name(), inputExistsRepository));
 		xml.append(XMLHandler.addTagValue(Field.INPUT_OBJECT_FIELD_NAME.name(), inputRepoName));
 		xml.append(XMLHandler.addTagValue(Field.INPUT_GRAPH_FIELD_NAME.name(), inputGraph));
@@ -122,7 +122,7 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 	@Override
 	public void readRep(Repository repository, ObjectId stepIdInRepository, List<DatabaseMeta> databases,
 			Map<String, Counter> sequenceCounters) throws KettleException {
-		inputFileFormat = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_SUBJECT_FIELD_NAME.name());
+		inputFileFormat = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_FILE_FORMAT_FIELD_NAME.name());
 		inputExistsRepository = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_PREDICATE_FIELD_NAME.name());
 		inputRepoName = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_OBJECT_FIELD_NAME.name());
 		inputGraph = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_GRAPH_FIELD_NAME.name());
@@ -135,7 +135,7 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 	// Persistir campos no repositorio
 	@Override
 	public void saveRep(Repository repository, ObjectId idOfTransformation, ObjectId idOfStep) throws KettleException {
-		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_SUBJECT_FIELD_NAME.name(), inputFileFormat);
+		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_FILE_FORMAT_FIELD_NAME.name(), inputFileFormat);
 		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_PREDICATE_FIELD_NAME.name(),inputExistsRepository);
 		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_OBJECT_FIELD_NAME.name(), inputRepoName);
 		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_GRAPH_FIELD_NAME.name(), inputGraph);
