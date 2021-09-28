@@ -37,7 +37,7 @@ import org.w3c.dom.Node;
 public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInterface {
 
 	public enum Field {
-		INPUT_FILE_FORMAT_FIELD_NAME, INPUT_EXISTS_REPOSITORY_FIELD_NAME, INPUT_REPO_NAME_FIELD_NAME, INPUT_GRAPH_FIELD_NAME, OUTPUT_NTRIPLE_FIELD_NAME, INNER_KEEP_INPUT_VALUE, INPUT_BROWSE_FILE_NAME,
+		INPUT_FILE_FORMAT_FIELD_NAME, INPUT_EXISTS_REPOSITORY_FIELD_NAME, INPUT_REPO_NAME_FIELD_NAME, INPUT_GRAPH_FIELD_NAME, INPUT_REPO_URL_FIELD_NAME, INNER_KEEP_INPUT_VALUE, INPUT_BROWSE_FILE_NAME,
 	}
 
 	// Campos Step - Input
@@ -97,7 +97,7 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 		inputExistsRepository = XMLHandler.getTagValue(stepDomNode, Field.INPUT_EXISTS_REPOSITORY_FIELD_NAME.name());
 		inputRepoName = XMLHandler.getTagValue(stepDomNode, Field.INPUT_REPO_NAME_FIELD_NAME.name());
 		inputGraph = XMLHandler.getTagValue(stepDomNode, Field.INPUT_GRAPH_FIELD_NAME.name());
-		inputRepoURL = XMLHandler.getTagValue(stepDomNode, Field.OUTPUT_NTRIPLE_FIELD_NAME.name());
+		inputRepoURL = XMLHandler.getTagValue(stepDomNode, Field.INPUT_REPO_URL_FIELD_NAME.name());
 		innerKeepInputFields = "Y".equals(XMLHandler.getTagValue(stepDomNode, Field.INNER_KEEP_INPUT_VALUE.name()));
 		browseFilename = XMLHandler.getTagValue(stepDomNode, Field.INPUT_BROWSE_FILE_NAME.name());
 	}
@@ -111,7 +111,7 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 		xml.append(XMLHandler.addTagValue(Field.INPUT_EXISTS_REPOSITORY_FIELD_NAME.name(), inputExistsRepository));
 		xml.append(XMLHandler.addTagValue(Field.INPUT_REPO_NAME_FIELD_NAME.name(), inputRepoName));
 		xml.append(XMLHandler.addTagValue(Field.INPUT_GRAPH_FIELD_NAME.name(), inputGraph));
-		xml.append(XMLHandler.addTagValue(Field.OUTPUT_NTRIPLE_FIELD_NAME.name(), inputRepoURL));
+		xml.append(XMLHandler.addTagValue(Field.INPUT_REPO_URL_FIELD_NAME.name(), inputRepoURL));
 		xml.append(XMLHandler.addTagValue(Field.INNER_KEEP_INPUT_VALUE.name(), innerKeepInputFields));
 		xml.append(XMLHandler.addTagValue(Field.INPUT_BROWSE_FILE_NAME.name(), browseFilename));
 
@@ -126,9 +126,8 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 		inputExistsRepository = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_EXISTS_REPOSITORY_FIELD_NAME.name());
 		inputRepoName = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_REPO_NAME_FIELD_NAME.name());
 		inputGraph = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_GRAPH_FIELD_NAME.name());
-		inputRepoURL = repository.getStepAttributeString(stepIdInRepository, Field.OUTPUT_NTRIPLE_FIELD_NAME.name());
-		innerKeepInputFields = repository.getStepAttributeBoolean(stepIdInRepository,
-				Field.INNER_KEEP_INPUT_VALUE.name());
+		inputRepoURL = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_REPO_URL_FIELD_NAME.name());
+		innerKeepInputFields = repository.getStepAttributeBoolean(stepIdInRepository, Field.INNER_KEEP_INPUT_VALUE.name());
 		browseFilename = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_BROWSE_FILE_NAME.name());
 	}
 
@@ -139,7 +138,7 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_EXISTS_REPOSITORY_FIELD_NAME.name(),inputExistsRepository);
 		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_REPO_NAME_FIELD_NAME.name(), inputRepoName);
 		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_GRAPH_FIELD_NAME.name(), inputGraph);
-		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.OUTPUT_NTRIPLE_FIELD_NAME.name(),inputRepoURL);
+		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_REPO_URL_FIELD_NAME.name(),inputRepoURL);
 		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INNER_KEEP_INPUT_VALUE.name(),innerKeepInputFields);
 		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_BROWSE_FILE_NAME.name(), browseFilename);
 	}
