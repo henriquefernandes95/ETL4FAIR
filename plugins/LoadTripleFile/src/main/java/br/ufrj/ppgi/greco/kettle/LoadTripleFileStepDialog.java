@@ -351,7 +351,7 @@ public class LoadTripleFileStepDialog extends BaseStepDialog implements StepDial
 		wStepname.selectAll();
 
 		wcFileFormat.setText(Const.NVL(input.getInputFileFormat(), ""));
-		wcExistsRepository.setText(Const.NVL(input.getInputPredicate(), ""));
+		wcExistsRepository.setText(Const.NVL(input.getExistsRepository(), ""));
 		wcRepoName.setText(Const.NVL(input.getInputRepoName(), ""));
 		wcGraphName.setText(Const.NVL(input.getInputGraph(), ""));
 		wtRepoURL.setText(Const.NVL(input.getInputRepoURL(), ""));
@@ -372,7 +372,7 @@ public class LoadTripleFileStepDialog extends BaseStepDialog implements StepDial
 
 		// Pegar dados da GUI e colocar no StepMeta
 		input.setInputFileFormat(wcFileFormat.getText());
-		input.setInputPredicate(wcExistsRepository.getText());
+		input.setExistsRepository(wcExistsRepository.getText());
 		input.setInputRepoName(wcRepoName.getText());
 		input.setInputGraph(wcGraphName.getText());
 		input.setInputRepoURL(wtRepoURL.getText());

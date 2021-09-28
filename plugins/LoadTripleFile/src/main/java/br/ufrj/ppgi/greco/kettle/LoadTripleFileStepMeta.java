@@ -42,7 +42,7 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 
 	// Campos Step - Input
 	private String inputFileFormat;
-	private String inputPredicate;
+	private String inputExistsRepository;
 	private String inputRepoName;
 	private String inputGraph;
 	private String inputRepoURL;
@@ -94,7 +94,7 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 	public void loadXML(Node stepDomNode, List<DatabaseMeta> databases, Map<String, Counter> sequenceCounters)
 			throws KettleXMLException {
 		inputFileFormat = XMLHandler.getTagValue(stepDomNode, Field.INPUT_SUBJECT_FIELD_NAME.name());
-		inputPredicate = XMLHandler.getTagValue(stepDomNode, Field.INPUT_PREDICATE_FIELD_NAME.name());
+		inputExistsRepository = XMLHandler.getTagValue(stepDomNode, Field.INPUT_PREDICATE_FIELD_NAME.name());
 		inputRepoName = XMLHandler.getTagValue(stepDomNode, Field.INPUT_OBJECT_FIELD_NAME.name());
 		inputGraph = XMLHandler.getTagValue(stepDomNode, Field.INPUT_GRAPH_FIELD_NAME.name());
 		inputRepoURL = XMLHandler.getTagValue(stepDomNode, Field.OUTPUT_NTRIPLE_FIELD_NAME.name());
@@ -108,7 +108,7 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 		StringBuilder xml = new StringBuilder();
 
 		xml.append(XMLHandler.addTagValue(Field.INPUT_SUBJECT_FIELD_NAME.name(), inputFileFormat));
-		xml.append(XMLHandler.addTagValue(Field.INPUT_PREDICATE_FIELD_NAME.name(), inputPredicate));
+		xml.append(XMLHandler.addTagValue(Field.INPUT_PREDICATE_FIELD_NAME.name(), inputExistsRepository));
 		xml.append(XMLHandler.addTagValue(Field.INPUT_OBJECT_FIELD_NAME.name(), inputRepoName));
 		xml.append(XMLHandler.addTagValue(Field.INPUT_GRAPH_FIELD_NAME.name(), inputGraph));
 		xml.append(XMLHandler.addTagValue(Field.OUTPUT_NTRIPLE_FIELD_NAME.name(), inputRepoURL));
@@ -123,7 +123,7 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 	public void readRep(Repository repository, ObjectId stepIdInRepository, List<DatabaseMeta> databases,
 			Map<String, Counter> sequenceCounters) throws KettleException {
 		inputFileFormat = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_SUBJECT_FIELD_NAME.name());
-		inputPredicate = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_PREDICATE_FIELD_NAME.name());
+		inputExistsRepository = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_PREDICATE_FIELD_NAME.name());
 		inputRepoName = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_OBJECT_FIELD_NAME.name());
 		inputGraph = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_GRAPH_FIELD_NAME.name());
 		inputRepoURL = repository.getStepAttributeString(stepIdInRepository, Field.OUTPUT_NTRIPLE_FIELD_NAME.name());
@@ -136,7 +136,7 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 	@Override
 	public void saveRep(Repository repository, ObjectId idOfTransformation, ObjectId idOfStep) throws KettleException {
 		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_SUBJECT_FIELD_NAME.name(), inputFileFormat);
-		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_PREDICATE_FIELD_NAME.name(),inputPredicate);
+		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_PREDICATE_FIELD_NAME.name(),inputExistsRepository);
 		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_OBJECT_FIELD_NAME.name(), inputRepoName);
 		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_GRAPH_FIELD_NAME.name(), inputGraph);
 		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.OUTPUT_NTRIPLE_FIELD_NAME.name(),inputRepoURL);
@@ -147,7 +147,7 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 	// Inicializacoes default
 	public void setDefault() {
 		inputFileFormat = "";
-		inputPredicate = "";
+		inputExistsRepository = "";
 		inputRepoName = "repo_pdi";
 		inputGraph = "import_pdi";
 		inputRepoURL = "http://localhost:7200/";
@@ -235,12 +235,12 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 		this.inputFileFormat = inputFileFormat;
 	}
 
-	public String getInputPredicate() {
-		return inputPredicate;
+	public String getExistsRepository() {
+		return inputExistsRepository;
 	}
 
-	public void setInputPredicate(String inputPredicate) {
-		this.inputPredicate = inputPredicate;
+	public void setExistsRepository(String inputExistsRepository) {
+		this.inputExistsRepository = inputExistsRepository;
 	}
 
 	public String getInputRepoName() {

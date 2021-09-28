@@ -92,10 +92,10 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 		// Logica do step
 		// Leitura de campos Input
 		String inputFileFormat = getInputRowMeta().getString(row, meta.getInputFileFormat(), "");
-		String inputPredicate = getInputRowMeta().getString(row, meta.getInputPredicate(), "");
+		String inputExistsRepository = getInputRowMeta().getString(row, meta.getExistsRepository(), "");
 		String inputRepoName = getInputRowMeta().getString(row, meta.getInputRepoName(), "");
 		String outputSubject = inputFileFormat;
-		String outputPredicate = inputPredicate;
+		String outputPredicate = inputExistsRepository;
 		String outputObject = inputRepoName;
 
 		try {
@@ -120,7 +120,7 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 					if (((Node) textFList.item(0)).getNodeValue().trim().contains(inputFileFormat)) {
 						outputSubject = ((Node) textTList.item(0)).getNodeValue().trim();
 					}
-					if (((Node) textFList.item(0)).getNodeValue().trim().contains(inputPredicate)) {
+					if (((Node) textFList.item(0)).getNodeValue().trim().contains(inputExistsRepository)) {
 						outputPredicate = ((Node) textTList.item(0)).getNodeValue().trim();
 					}
 					if (((Node) textFList.item(0)).getNodeValue().trim().contains(inputRepoName)) {
@@ -140,7 +140,7 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 			e.printStackTrace();
 		}
 
-		if (inputPredicate.equals(RDF_TYPE_URI)) {
+		if (inputExistsRepository.equals(RDF_TYPE_URI)) {
 			inputRepoURL = String.format(URI_OBJECT_TRIPLE_FORMAT, outputSubject, outputPredicate, outputObject);
 		} else {
 
