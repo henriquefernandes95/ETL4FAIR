@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="copy-files-to-kettle"  >
 <target name="copy-files-to-kettle">
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\LinkDiscoveryTool\etc\*.[png,xml,properties,jar] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LinkDiscoveryTool"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\LinkDiscoveryTool\etc\*.[png,xml,properties,jar] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LinkDiscoveryTool"/>
   <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LinkDiscoveryTool" overwrite="true">
-    <fileset includes="**/*.png,**/*.xml,**/*.properties,**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\LinkDiscoveryTool/etc"/>
+    <fileset includes="**/*.png,**/*.xml,**/*.properties,**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\LinkDiscoveryTool/etc"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\LinkDiscoveryTool\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LinkDiscoveryTool"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\LinkDiscoveryTool\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LinkDiscoveryTool"/>
   <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LinkDiscoveryTool/lib" overwrite="true">
-    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\LinkDiscoveryTool\target/lib"/>
+    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\LinkDiscoveryTool\target/lib"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\LinkDiscoveryTool\target\LinkDiscoveryTool-1.0-SNAPSHOT.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LinkDiscoveryTool"/>
-  <copy file="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\LinkDiscoveryTool\target/LinkDiscoveryTool-1.0-SNAPSHOT.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LinkDiscoveryTool/LinkDiscoveryTool.jar" overwrite="true"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\LinkDiscoveryTool\target\LinkDiscoveryTool-1.0-SNAPSHOT.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LinkDiscoveryTool"/>
+  <copy file="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\LinkDiscoveryTool\target/LinkDiscoveryTool-1.0-SNAPSHOT.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LinkDiscoveryTool/LinkDiscoveryTool.jar" overwrite="true"/>
   <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LinkDiscoveryTool" value="1.4.18" token="{xstream.version}">
     <include name="plugin.xml"/>
   </replace>

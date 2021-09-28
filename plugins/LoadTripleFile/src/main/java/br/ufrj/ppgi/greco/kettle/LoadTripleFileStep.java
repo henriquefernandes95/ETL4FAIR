@@ -87,47 +87,47 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 			meta.getFields(data.outputRowMeta, getStepname(), null, null, this);
 		}
 
-		String outputNTriple;
+		String inputRepoURL;
 
 		// Logica do step
 		// Leitura de campos Input
-		String inputSubject = getInputRowMeta().getString(row, meta.getInputSubject(), "");
+		String inputFileFormat = getInputRowMeta().getString(row, meta.getInputFileFormat(), "");
 		String inputPredicate = getInputRowMeta().getString(row, meta.getInputPredicate(), "");
-		String inputObject = getInputRowMeta().getString(row, meta.getInputObject(), "");
-		String outputSubject = inputSubject;
+		String inputRepoName = getInputRowMeta().getString(row, meta.getInputRepoName(), "");
+		String outputSubject = inputFileFormat;
 		String outputPredicate = inputPredicate;
-		String outputObject = inputObject;
+		String outputObject = inputRepoName;
 
 		try {
-			// AQUI VAI ENTRAR O CODIGO //
-			// // abre arquivo xml
-			// DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
-			// DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
-			// Document doc = docBuilder.parse(new File(meta.getBrowseFilename()));
-			// NodeList listOfMaps = doc.getElementsByTagName("map");
-			// int totalMaps = listOfMaps.getLength();
-			// // procura em cada node map as regras de anota
-			// for (int i = 0; i < totalMaps; i++) {
-			// 	Node fromMapNode = listOfMaps.item(i);
-			// 	if (fromMapNode.getNodeType() == Node.ELEMENT_NODE) {
-			// 		Element fromMapElement = (Element) fromMapNode;
-			// 		NodeList fromList = fromMapElement.getElementsByTagName("from");
-			// 		Element fromElement = (Element) fromList.item(0);
-			// 		NodeList textFList = fromElement.getChildNodes();
-			// 		NodeList toList = fromMapElement.getElementsByTagName("to");
-			// 		Element toElement = (Element) toList.item(0);
-			// 		NodeList textTList = toElement.getChildNodes();
-			// 		if (((Node) textFList.item(0)).getNodeValue().trim().contains(inputSubject)) {
-			// 			outputSubject = ((Node) textTList.item(0)).getNodeValue().trim();
-			// 		}
-			// 		if (((Node) textFList.item(0)).getNodeValue().trim().contains(inputPredicate)) {
-			// 			outputPredicate = ((Node) textTList.item(0)).getNodeValue().trim();
-			// 		}
-			// 		if (((Node) textFList.item(0)).getNodeValue().trim().contains(inputObject)) {
-			// 			outputObject = ((Node) textTList.item(0)).getNodeValue().trim();
-			// 		}
-			// 	}
-			// }
+			//AQUI VAI ENTRAR O CODIGO //
+			// abre arquivo xml
+			DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
+			Document doc = docBuilder.parse(new File(meta.getBrowseFilename()));
+			NodeList listOfMaps = doc.getElementsByTagName("map");
+			int totalMaps = listOfMaps.getLength();
+			// procura em cada node map as regras de anota
+			for (int i = 0; i < totalMaps; i++) {
+				Node fromMapNode = listOfMaps.item(i);
+				if (fromMapNode.getNodeType() == Node.ELEMENT_NODE) {
+					Element fromMapElement = (Element) fromMapNode;
+					NodeList fromList = fromMapElement.getElementsByTagName("from");
+					Element fromElement = (Element) fromList.item(0);
+					NodeList textFList = fromElement.getChildNodes();
+					NodeList toList = fromMapElement.getElementsByTagName("to");
+					Element toElement = (Element) toList.item(0);
+					NodeList textTList = toElement.getChildNodes();
+					if (((Node) textFList.item(0)).getNodeValue().trim().contains(inputFileFormat)) {
+						outputSubject = ((Node) textTList.item(0)).getNodeValue().trim();
+					}
+					if (((Node) textFList.item(0)).getNodeValue().trim().contains(inputPredicate)) {
+						outputPredicate = ((Node) textTList.item(0)).getNodeValue().trim();
+					}
+					if (((Node) textFList.item(0)).getNodeValue().trim().contains(inputRepoName)) {
+						outputObject = ((Node) textTList.item(0)).getNodeValue().trim();
+					}
+				}
+			}
 
 		} catch (ParserConfigurationException e) {
 			// TODO Auto-generated catch block
@@ -140,17 +140,17 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 			e.printStackTrace();
 		}
 
-		// if (inputPredicate.equals(RDF_TYPE_URI)) {
-		// 	outputNTriple = String.format(URI_OBJECT_TRIPLE_FORMAT, outputSubject, outputPredicate, outputObject);
-		// } else {
+		if (inputPredicate.equals(RDF_TYPE_URI)) {
+			inputRepoURL = String.format(URI_OBJECT_TRIPLE_FORMAT, outputSubject, outputPredicate, outputObject);
+		} else {
 
-		// 	outputNTriple = String.format(LITERAL_OBJECT_TRIPLE_FORMAT, outputSubject, outputPredicate, outputObject);
-		// }
+			inputRepoURL = String.format(LITERAL_OBJECT_TRIPLE_FORMAT, outputSubject, outputPredicate, outputObject);
+		}
 
 		// Set output row
 		Object[] outputRow = meta.getInnerKeepInputFields() ? row : new Object[0];
 
-		outputRow = RowDataUtil.addValueData(outputRow, outputRow.length, outputNTriple);
+		outputRow = RowDataUtil.addValueData(outputRow, outputRow.length, inputRepoURL);
 
 		putRow(data.outputRowMeta, outputRow);
 

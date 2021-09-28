@@ -350,11 +350,11 @@ public class LoadTripleFileStepDialog extends BaseStepDialog implements StepDial
 	private void getData() {
 		wStepname.selectAll();
 
-		wcFileFormat.setText(Const.NVL(input.getInputSubject(), ""));
+		wcFileFormat.setText(Const.NVL(input.getInputFileFormat(), ""));
 		wcExistsRepository.setText(Const.NVL(input.getInputPredicate(), ""));
-		wcRepoName.setText(Const.NVL(input.getInputObject(), ""));
+		wcRepoName.setText(Const.NVL(input.getInputRepoName(), ""));
 		wcGraphName.setText(Const.NVL(input.getInputGraph(), ""));
-		wtRepoURL.setText(Const.NVL(input.getOutputNTriple(), ""));
+		wtRepoURL.setText(Const.NVL(input.getInputRepoURL(), ""));
 		wBrowse.setText(input.getBrowseFilename());
 	}
 
@@ -371,11 +371,11 @@ public class LoadTripleFileStepDialog extends BaseStepDialog implements StepDial
 		stepname = wStepname.getText(); // return value
 
 		// Pegar dados da GUI e colocar no StepMeta
-		input.setInputSubject(wcFileFormat.getText());
+		input.setInputFileFormat(wcFileFormat.getText());
 		input.setInputPredicate(wcExistsRepository.getText());
-		input.setInputObject(wcRepoName.getText());
+		input.setInputRepoName(wcRepoName.getText());
 		input.setInputGraph(wcGraphName.getText());
-		input.setOutputNTriple(wtRepoURL.getText());
+		input.setInputRepoURL(wtRepoURL.getText());
 		input.setBrowseFilename(wBrowse.getText());
 
 		// Fecha janela

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="copy-files-to-kettle"  >
 <target name="copy-files-to-kettle">
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\GraphTriplify\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphTriplify"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\GraphTriplify\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphTriplify"/>
   <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphTriplify" overwrite="true">
-    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\GraphTriplify/etc"/>
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\GraphTriplify/etc"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\GraphTriplify\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphTriplify"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\GraphTriplify\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphTriplify"/>
   <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphTriplify/lib" overwrite="true">
-    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\GraphTriplify\target/lib"/>
+    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\GraphTriplify\target/lib"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\GraphTriplify\target\GraphTriplify-1.0.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphTriplify"/>
-  <copy file="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\GraphTriplify\target/GraphTriplify-1.0.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphTriplify/GraphTriplify.jar" overwrite="true"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\GraphTriplify\target\GraphTriplify-1.0.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphTriplify"/>
+  <copy file="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\GraphTriplify\target/GraphTriplify-1.0.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphTriplify/GraphTriplify.jar" overwrite="true"/>
 </target>
 </project>

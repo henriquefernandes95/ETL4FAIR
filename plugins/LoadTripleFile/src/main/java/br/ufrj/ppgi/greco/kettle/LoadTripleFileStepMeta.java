@@ -41,14 +41,16 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 	}
 
 	// Campos Step - Input
-	private String inputSubject;
+	private String inputFileFormat;
 	private String inputPredicate;
-	private String inputObject;
+	private String inputRepoName;
 	private String inputGraph;
+	private String inputRepoURL;
 	public String browseFilename;
+	
 
 	// Campos Step - Output
-	private String outputNTriple;
+	//private String ;
 
 	// Campos Step - Inner
 	private Boolean innerKeepInputFields;
@@ -91,11 +93,11 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 	@Override
 	public void loadXML(Node stepDomNode, List<DatabaseMeta> databases, Map<String, Counter> sequenceCounters)
 			throws KettleXMLException {
-		inputSubject = XMLHandler.getTagValue(stepDomNode, Field.INPUT_SUBJECT_FIELD_NAME.name());
+		inputFileFormat = XMLHandler.getTagValue(stepDomNode, Field.INPUT_SUBJECT_FIELD_NAME.name());
 		inputPredicate = XMLHandler.getTagValue(stepDomNode, Field.INPUT_PREDICATE_FIELD_NAME.name());
-		inputObject = XMLHandler.getTagValue(stepDomNode, Field.INPUT_OBJECT_FIELD_NAME.name());
+		inputRepoName = XMLHandler.getTagValue(stepDomNode, Field.INPUT_OBJECT_FIELD_NAME.name());
 		inputGraph = XMLHandler.getTagValue(stepDomNode, Field.INPUT_GRAPH_FIELD_NAME.name());
-		outputNTriple = XMLHandler.getTagValue(stepDomNode, Field.OUTPUT_NTRIPLE_FIELD_NAME.name());
+		inputRepoURL = XMLHandler.getTagValue(stepDomNode, Field.OUTPUT_NTRIPLE_FIELD_NAME.name());
 		innerKeepInputFields = "Y".equals(XMLHandler.getTagValue(stepDomNode, Field.INNER_KEEP_INPUT_VALUE.name()));
 		browseFilename = XMLHandler.getTagValue(stepDomNode, Field.INPUT_BROWSE_FILE_NAME.name());
 	}
@@ -105,11 +107,11 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 	public String getXML() throws KettleException {
 		StringBuilder xml = new StringBuilder();
 
-		xml.append(XMLHandler.addTagValue(Field.INPUT_SUBJECT_FIELD_NAME.name(), inputSubject));
+		xml.append(XMLHandler.addTagValue(Field.INPUT_SUBJECT_FIELD_NAME.name(), inputFileFormat));
 		xml.append(XMLHandler.addTagValue(Field.INPUT_PREDICATE_FIELD_NAME.name(), inputPredicate));
-		xml.append(XMLHandler.addTagValue(Field.INPUT_OBJECT_FIELD_NAME.name(), inputObject));
+		xml.append(XMLHandler.addTagValue(Field.INPUT_OBJECT_FIELD_NAME.name(), inputRepoName));
 		xml.append(XMLHandler.addTagValue(Field.INPUT_GRAPH_FIELD_NAME.name(), inputGraph));
-		xml.append(XMLHandler.addTagValue(Field.OUTPUT_NTRIPLE_FIELD_NAME.name(), outputNTriple));
+		xml.append(XMLHandler.addTagValue(Field.OUTPUT_NTRIPLE_FIELD_NAME.name(), inputRepoURL));
 		xml.append(XMLHandler.addTagValue(Field.INNER_KEEP_INPUT_VALUE.name(), innerKeepInputFields));
 		xml.append(XMLHandler.addTagValue(Field.INPUT_BROWSE_FILE_NAME.name(), browseFilename));
 
@@ -120,11 +122,11 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 	@Override
 	public void readRep(Repository repository, ObjectId stepIdInRepository, List<DatabaseMeta> databases,
 			Map<String, Counter> sequenceCounters) throws KettleException {
-		inputSubject = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_SUBJECT_FIELD_NAME.name());
+		inputFileFormat = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_SUBJECT_FIELD_NAME.name());
 		inputPredicate = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_PREDICATE_FIELD_NAME.name());
-		inputObject = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_OBJECT_FIELD_NAME.name());
+		inputRepoName = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_OBJECT_FIELD_NAME.name());
 		inputGraph = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_GRAPH_FIELD_NAME.name());
-		outputNTriple = repository.getStepAttributeString(stepIdInRepository, Field.OUTPUT_NTRIPLE_FIELD_NAME.name());
+		inputRepoURL = repository.getStepAttributeString(stepIdInRepository, Field.OUTPUT_NTRIPLE_FIELD_NAME.name());
 		innerKeepInputFields = repository.getStepAttributeBoolean(stepIdInRepository,
 				Field.INNER_KEEP_INPUT_VALUE.name());
 		browseFilename = repository.getStepAttributeString(stepIdInRepository, Field.INPUT_BROWSE_FILE_NAME.name());
@@ -133,25 +135,22 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 	// Persistir campos no repositorio
 	@Override
 	public void saveRep(Repository repository, ObjectId idOfTransformation, ObjectId idOfStep) throws KettleException {
-		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_SUBJECT_FIELD_NAME.name(), inputSubject);
-		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_PREDICATE_FIELD_NAME.name(),
-				inputPredicate);
-		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_OBJECT_FIELD_NAME.name(), inputObject);
+		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_SUBJECT_FIELD_NAME.name(), inputFileFormat);
+		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_PREDICATE_FIELD_NAME.name(),inputPredicate);
+		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_OBJECT_FIELD_NAME.name(), inputRepoName);
 		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_GRAPH_FIELD_NAME.name(), inputGraph);
-		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.OUTPUT_NTRIPLE_FIELD_NAME.name(),
-				outputNTriple);
-		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INNER_KEEP_INPUT_VALUE.name(),
-				innerKeepInputFields);
+		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.OUTPUT_NTRIPLE_FIELD_NAME.name(),inputRepoURL);
+		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INNER_KEEP_INPUT_VALUE.name(),innerKeepInputFields);
 		repository.saveStepAttribute(idOfTransformation, idOfStep, Field.INPUT_BROWSE_FILE_NAME.name(), browseFilename);
 	}
 
 	// Inicializacoes default
 	public void setDefault() {
-		inputSubject = "";
+		inputFileFormat = "";
 		inputPredicate = "";
-		inputObject = "repo_pdi";
+		inputRepoName = "repo_pdi";
 		inputGraph = "import_pdi";
-		outputNTriple = "http://localhost:7200/";
+		inputRepoURL = "http://localhost:7200/";
 		innerKeepInputFields = false;
 		browseFilename = "";
 	}
@@ -219,7 +218,7 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 		}
 
 		// Adiciona os metadados dos campos de output
-		addValueMeta(inputRowMeta, outputNTriple, name);
+		//addValueMeta(inputRowMeta, outputNTriple, name);
 	}
 
 	private void addValueMeta(RowMetaInterface inputRowMeta, String fieldName, String origin) {
@@ -228,12 +227,12 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 		inputRowMeta.addValueMeta(field);
 	}
 
-	public String getInputSubject() {
-		return inputSubject;
+	public String getInputFileFormat() {
+		return inputFileFormat;
 	}
 
-	public void setInputSubject(String inputSubject) {
-		this.inputSubject = inputSubject;
+	public void setInputFileFormat(String inputFileFormat) {
+		this.inputFileFormat = inputFileFormat;
 	}
 
 	public String getInputPredicate() {
@@ -244,12 +243,12 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 		this.inputPredicate = inputPredicate;
 	}
 
-	public String getInputObject() {
-		return inputObject;
+	public String getInputRepoName() {
+		return inputRepoName;
 	}
 	
-	public void setInputObject(String inputObject) {
-		this.inputObject = inputObject;
+	public void setInputRepoName(String inputRepoName) {
+		this.inputRepoName = inputRepoName;
 	}
 
 	public String getInputGraph() {
@@ -260,12 +259,12 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 		this.inputGraph = inputGraph;
 	}
 
-	public String getOutputNTriple() {
-		return outputNTriple;
+	public String getInputRepoURL() {
+		return inputRepoURL;
 	}
 
-	public void setOutputNTriple(String outputNTriple) {
-		this.outputNTriple = outputNTriple;
+	public void setInputRepoURL(String inputRepoURL) {
+		this.inputRepoURL = inputRepoURL;
 	}
 
 	public Boolean getInnerKeepInputFields() {

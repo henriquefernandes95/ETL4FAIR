@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="copy-files-to-kettle"  >
 <target name="copy-files-to-kettle">
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\SparqlEndpoint\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\SparqlEndpoint\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint"/>
   <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint" overwrite="true">
-    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\SparqlEndpoint/etc"/>
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\SparqlEndpoint/etc"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\SparqlEndpoint\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\SparqlEndpoint\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint"/>
   <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint/lib" overwrite="true">
-    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\SparqlEndpoint\target/lib"/>
+    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\SparqlEndpoint\target/lib"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\SparqlEndpoint\target\SparqlEndpoint-1.1.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint"/>
-  <copy file="E:\Documentos\UFRJ\TCC\ETL4LODPlus-master\plugins\SparqlEndpoint\target/SparqlEndpoint-1.1.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint/SparqlEndpoint.jar" overwrite="true"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\SparqlEndpoint\target\SparqlEndpoint-1.1.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint"/>
+  <copy file="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\SparqlEndpoint\target/SparqlEndpoint-1.1.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint/SparqlEndpoint.jar" overwrite="true"/>
   <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint" value="1.4.18" token="{xstream.version}">
     <include name="plugin.xml"/>
   </replace>
