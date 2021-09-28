@@ -24,6 +24,21 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import org.eclipse.rdf4j.model.*;
+import org.eclipse.rdf4j.model.impl.TreeModel;
+import org.eclipse.rdf4j.model.util.Models;
+import org.eclipse.rdf4j.model.vocabulary.RDF;
+import org.eclipse.rdf4j.repository.Repository;
+import org.eclipse.rdf4j.repository.RepositoryConnection;
+import org.eclipse.rdf4j.repository.config.RepositoryConfig;
+import org.eclipse.rdf4j.repository.config.RepositoryConfigSchema;
+import org.eclipse.rdf4j.repository.manager.RepositoryManager;
+import org.eclipse.rdf4j.repository.manager.RepositoryProvider;
+import org.eclipse.rdf4j.rio.RDFFormat;
+import org.eclipse.rdf4j.rio.RDFParser;
+import org.eclipse.rdf4j.rio.Rio;
+import org.eclipse.rdf4j.rio.helpers.StatementCollector;
+
 /**
  * Step Load Triple File.
  * 
@@ -46,10 +61,12 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
 	@Override
 	public boolean init(StepMetaInterface smi, StepDataInterface sdi) {
+
 		if (super.init(smi, sdi)) {
 			return true;
 		} else
 			return false;
+
 	} 
 
 	@Override

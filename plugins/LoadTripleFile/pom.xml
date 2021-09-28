@@ -12,9 +12,9 @@
 
 	<developers>
 		<developer>
-			<id>camilacf</id>
-			<name>Camila Carvalho Ferreira</name>
-			<email>camilacf2112@gmail.com</email>
+			<id>nickgp</id>
+			<name>Nickolas Gomes Pinto</name>
+			<email>nickolasgomesp@gmail.com</email>
 			<organization>UFRJ (PPGI/GRECO)</organization>
 			<organizationUrl>http://greco.ppgi.ufrj.br</organizationUrl>
 		</developer>
@@ -55,6 +55,12 @@
 									file="${project.build.directory}/${project.build.finalName}.${project.packaging}"
 									tofile="${pdi.home}/${pdi.plugin.dir}/${pdi.plugin.lib_name}.${project.packaging}"
 									overwrite="true" />
+
+								<replace token='{rdf4j.version}' value='${rdf4j.version}'
+									dir="${pdi.home}/${pdi.plugin.dir}">
+									<include name="plugin.xml" />
+								</replace>
+								
 							</target>
 						</configuration>
 						<goals>
@@ -86,6 +92,15 @@
 									<outputDirectory>${project.build.directory}/lib</outputDirectory>
 								</artifactItem>
 
+								<artifactItem>
+									<groupId>org.eclipse.rdf4j</groupId>
+									<artifactId>rdf4j-bom</artifactId>
+									<version>${rdf4j.version}</version>
+									<type>pom</type>
+									<overWrite>true</overWrite>
+									<outputDirectory>${project.build.directory}/lib</outputDirectory>
+								</artifactItem>
+
 							</artifactItems>
 						</configuration>
 					</execution>
@@ -110,6 +125,12 @@
 	</build>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.eclipse.rdf4j</groupId>
+			<artifactId>rdf4j-bom</artifactId>
+			<version>${rdf4j.version}</version>
+			<type>pom</type>
+		</dependency>
 	</dependencies>
 
 </project>

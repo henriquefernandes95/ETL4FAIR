@@ -9,6 +9,7 @@
    <libraries>
 		<library name="LoadTripleFile.jar"/>
 		<library name="lib/KettlePluginTools-1.0.jar"/>
+          <library name="lib/rdf4j-bom-{rdf4j.version}.pom"/>
 	</libraries>
 	
 	<localized_category>

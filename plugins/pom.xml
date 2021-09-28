@@ -128,6 +128,8 @@
 		<mysql.version>8.0.25</mysql.version> <!-- 5.1.35 -->
 		<psql.version>9.1-901.jdbc4</psql.version> <!-- 9.1-901.jdbc4 -->
 		<slf4j.version>1.7.32</slf4j.version> <!-- 1.7.6< -->
+		<rdf4j.version>3.7.2</rdf4j.version>
+
 	</properties>
 
 	<repositories>
@@ -235,7 +237,7 @@
 			<artifactId>rdf4j-bom</artifactId>
 			<version>3.7.2</version>
 			<type>pom</type>
-			<scope>import</scope>
+			<!--<scope>import</scope> -->
 		</dependency>
 
 		<dependency>
