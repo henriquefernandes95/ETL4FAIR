@@ -2,6 +2,7 @@ package br.ufrj.ppgi.greco.kettle;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintStream;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -86,6 +87,19 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 		Object[] row = getRow();
 
 		if (row == null) { // Nao ha mais linhas de dados
+
+			String inputFileFormat = meta.getInputFileFormat();
+			System.out.println("inputFileFormat = " + inputFileFormat);
+			String inputExistsRepository = meta.getExistsRepository();
+			System.out.println("inputExistsRepository = " + inputExistsRepository);
+			String inputRepoName = meta.getInputRepoName();
+			System.out.println("inputRepoName = " + inputRepoName);
+			String inputGraphName = meta.getInputGraph();
+			System.out.println("inputGraphName = " + inputGraphName);
+			String inputRepoURL = meta.getInputRepoURL();
+			System.out.println("inputRepoURL = " + inputRepoURL);
+			String browseFilename = meta.getBrowseFilename();
+			System.out.println("browseFilename = " + browseFilename);
 			setOutputDone();
 			return false;
 		}
@@ -104,65 +118,44 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 			meta.getFields(data.outputRowMeta, getStepname(), null, null, this);
 		}
 
-		String inputRepoURL;
+		//String inputRepoURL;
 
 		// Logica do step
 		// Leitura de campos Input
-		String inputFileFormat = getInputRowMeta().getString(row, meta.getInputFileFormat(), "");
-		String inputExistsRepository = getInputRowMeta().getString(row, meta.getExistsRepository(), "");
-		String inputRepoName = getInputRowMeta().getString(row, meta.getInputRepoName(), "");
-		String outputSubject = inputFileFormat;
-		String outputPredicate = inputExistsRepository;
-		String outputObject = inputRepoName;
+		String inputFileFormat = meta.getInputFileFormat();
+		System.out.println("inputFileFormat = " + inputFileFormat);
+		String inputExistsRepository = meta.getExistsRepository();
+		String inputRepoName = meta.getInputRepoName();
+		String inputGraphName = meta.getInputGraph();
+		String inputRepoURL = meta.getInputRepoURL();
+		String browseFilename = meta.getBrowseFilename();
 
 		try {
-			//AQUI VAI ENTRAR O CODIGO //
-			// abre arquivo xml
-			DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
-			Document doc = docBuilder.parse(new File(meta.getBrowseFilename()));
-			NodeList listOfMaps = doc.getElementsByTagName("map");
-			int totalMaps = listOfMaps.getLength();
-			// procura em cada node map as regras de anota
-			for (int i = 0; i < totalMaps; i++) {
-				Node fromMapNode = listOfMaps.item(i);
-				if (fromMapNode.getNodeType() == Node.ELEMENT_NODE) {
-					Element fromMapElement = (Element) fromMapNode;
-					NodeList fromList = fromMapElement.getElementsByTagName("from");
-					Element fromElement = (Element) fromList.item(0);
-					NodeList textFList = fromElement.getChildNodes();
-					NodeList toList = fromMapElement.getElementsByTagName("to");
-					Element toElement = (Element) toList.item(0);
-					NodeList textTList = toElement.getChildNodes();
-					if (((Node) textFList.item(0)).getNodeValue().trim().contains(inputFileFormat)) {
-						outputSubject = ((Node) textTList.item(0)).getNodeValue().trim();
-					}
-					if (((Node) textFList.item(0)).getNodeValue().trim().contains(inputExistsRepository)) {
-						outputPredicate = ((Node) textTList.item(0)).getNodeValue().trim();
-					}
-					if (((Node) textFList.item(0)).getNodeValue().trim().contains(inputRepoName)) {
-						outputObject = ((Node) textTList.item(0)).getNodeValue().trim();
-					}
-				}
-			}
+			
+			log.logBasic("inputFileFormat = " + inputFileFormat);
+			//System.out.println();
 
-		} catch (ParserConfigurationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SAXException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		} //catch (ParserConfigurationException e) {
+		// 	// TODO Auto-generated catch block
+		// 	e.printStackTrace();
+		// } catch (SAXException e) {
+		// 	// TODO Auto-generated catch block
+		// 	e.printStackTrace();
+		// } catch (IOException e) {
+		// 	// TODO Auto-generated catch block
+		// 	e.printStackTrace();
+		// }
+		catch (RuntimeException e) {
+            System.out.print("RuntimeException: ");
+            System.out.println(e.getMessage());
+        }
 
-		if (inputExistsRepository.equals(RDF_TYPE_URI)) {
-			inputRepoURL = String.format(URI_OBJECT_TRIPLE_FORMAT, outputSubject, outputPredicate, outputObject);
-		} else {
+		// if (inputExistsRepository.equals(RDF_TYPE_URI)) {
+		// 	inputRepoURL = String.format(URI_OBJECT_TRIPLE_FORMAT, outputSubject, outputPredicate, outputObject);
+		// } else {
 
-			inputRepoURL = String.format(LITERAL_OBJECT_TRIPLE_FORMAT, outputSubject, outputPredicate, outputObject);
-		}
+		// 	inputRepoURL = String.format(LITERAL_OBJECT_TRIPLE_FORMAT, outputSubject, outputPredicate, outputObject);
+		// }
 
 		// Set output row
 		Object[] outputRow = meta.getInnerKeepInputFields() ? row : new Object[0];
