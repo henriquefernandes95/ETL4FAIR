@@ -1,8 +1,9 @@
 package br.ufrj.ppgi.greco.kettle;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintStream;
+import java.io.*;
+import java.net.URL;
+//import java.io.IOException;
+//import java.io.PrintStream;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -29,16 +30,20 @@ import org.eclipse.rdf4j.model.*;
 import org.eclipse.rdf4j.model.impl.TreeModel;
 import org.eclipse.rdf4j.model.util.Models;
 import org.eclipse.rdf4j.model.vocabulary.RDF;
+import org.eclipse.rdf4j.RDF4JException;
 import org.eclipse.rdf4j.repository.Repository;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
 import org.eclipse.rdf4j.repository.config.RepositoryConfig;
 import org.eclipse.rdf4j.repository.config.RepositoryConfigSchema;
 import org.eclipse.rdf4j.repository.manager.RepositoryManager;
 import org.eclipse.rdf4j.repository.manager.RepositoryProvider;
+import org.eclipse.rdf4j.rio.*;
 import org.eclipse.rdf4j.rio.RDFFormat;
+import org.eclipse.rdf4j.rio.RDFWriter;
 import org.eclipse.rdf4j.rio.RDFParser;
 import org.eclipse.rdf4j.rio.Rio;
 import org.eclipse.rdf4j.rio.helpers.StatementCollector;
+import org.eclipse.rdf4j.rio.RDFHandler;
 
 /**
  * Step Load Triple File.
@@ -167,21 +172,87 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 		return true;
 	}
 
+	// Inicializa o Repositório
 	public static RepositoryManager InitRepo(StepMetaInterface smi){
 
-        // // Recupera variaveis do teclado
-        // Scanner keyboard = new Scanner(System.in);
-
-        // //inicializa o repositório
-        // System.out.println("Entre com a URL do repositório: ");
+		 // Recupera variaveis da interface gráfica
 		LoadTripleFileStepMeta meta = (LoadTripleFileStepMeta) smi;
 		String inputRepoURL = meta.getInputRepoURL();
+
         String repo_path = inputRepoURL;
         RepositoryManager manager = RepositoryProvider.getRepositoryManager(repo_path);
         manager.init();
         manager.getAllRepositories();
         
         return manager;
+
+    }
+
+	// Cria repositório
+	public static String CreateRepo(RepositoryManager manager, StepMetaInterface smi){
+
+        // Recupera variaveis da interface gráfica
+        LoadTripleFileStepMeta meta = (LoadTripleFileStepMeta) smi;
+		String inputExistsRepository = meta.getExistsRepository(); // Verificador se repositorio existe ou nao
+		String inputRepoName = meta.getInputRepoName(); // nome do repositorio
+
+        // Verifica se vai usar repositorio ja existente ou criar um novo
+        inputExistsRepository = inputExistsRepository.toUpperCase();
+
+		// Cria variavel auxiliar para repo_name
+		String repo_name = null;
+        
+        // Repositorio ja existe
+        if ( inputExistsRepository.equals("S") ){
+
+            repo_name = inputRepoName;
+				
+        } else if( inputExistsRepository.equals("N") ){ // Repositorio nao existe, cria um default
+
+            InputStream config_test = null;
+            RDFParser rdfParser_test = null;
+            TreeModel graph_test = new TreeModel();
+
+            try {
+
+               config_test = new FileInputStream(new File("repo_config/repo-defaults_test.ttl"));
+
+            } catch (FileNotFoundException e) {				
+                e.printStackTrace();
+            }
+
+            rdfParser_test = Rio.createParser(RDFFormat.TURTLE);
+           // rdfParser_test.setRDFHandler(new StatementCollector(graph_test));
+
+
+            try {
+
+                rdfParser_test.parse(config_test, RepositoryConfigSchema.NAMESPACE);
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            } 
+
+            try {
+
+                config_test.close();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            //Obtendo o repositório como recurso
+            Resource repoNode_test = Models.subject(graph_test.filter(null, RDF.TYPE, RepositoryConfigSchema.REPOSITORY)).orElseThrow(() -> new RuntimeException("Oops, no <http://www.openrdf.org/config/repository#> subject found!"));
+
+            //Adicionando as configurações
+            RepositoryConfig configObj = RepositoryConfig.create(graph_test, repoNode_test);
+            manager.addRepositoryConfig(configObj);
+
+            repo_name = "repo_pdi";
+
+        }
+
+        return repo_name;
 
     }
 }
