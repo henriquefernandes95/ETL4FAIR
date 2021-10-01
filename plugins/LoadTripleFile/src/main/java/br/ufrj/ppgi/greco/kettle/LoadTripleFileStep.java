@@ -166,4 +166,22 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
 		return true;
 	}
+
+	public static RepositoryManager InitRepo(StepMetaInterface smi){
+
+        // // Recupera variaveis do teclado
+        // Scanner keyboard = new Scanner(System.in);
+
+        // //inicializa o repositório
+        // System.out.println("Entre com a URL do repositório: ");
+		LoadTripleFileStepMeta meta = (LoadTripleFileStepMeta) smi;
+		String inputRepoURL = meta.getInputRepoURL();
+        String repo_path = inputRepoURL;
+        RepositoryManager manager = RepositoryProvider.getRepositoryManager(repo_path);
+        manager.init();
+        manager.getAllRepositories();
+        
+        return manager;
+
+    }
 }
