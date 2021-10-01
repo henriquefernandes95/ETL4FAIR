@@ -164,7 +164,7 @@ public class LoadTripleFileStepDialog extends BaseStepDialog implements StepDial
 		wlExistsRepository.setLayoutData(fdlExistsRepository);
 
 		wcExistsRepository = new ComboVar(transMeta, shell, SWT.SINGLE | SWT.LEFT | SWT.BORDER);
-		wcExistsRepository.setItems( new String[]{ "SIM", "NÃO" } );
+		wcExistsRepository.setItems( new String[]{ "S", "N" } );
 		wcExistsRepository.setEditable( false );
 		wcExistsRepository.select( 0 );
 		props.setLook(wcExistsRepository);
