@@ -65,6 +65,7 @@ import org.slf4j.MarkerFactory;
 public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
 
+    // Construtor
 	public LoadTripleFileStep(StepMeta stepMeta, StepDataInterface stepDataInterface, int copyNr, TransMeta transMeta,
 			Trans trans) {
 		super(stepMeta, stepDataInterface, copyNr, transMeta, trans);
@@ -99,41 +100,30 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 		if (row == null) { // Nao ha mais linhas de dados
 
 			String inputFileFormat = meta.getInputFileFormat();
-			System.out.println("inputFileFormat = " + inputFileFormat);
 			String inputExistsRepository = meta.getExistsRepository();
-			System.out.println("inputExistsRepository = " + inputExistsRepository);
 			String inputRepoName = meta.getInputRepoName();
-			System.out.println("inputRepoName = " + inputRepoName);
 			String inputGraphName = meta.getInputGraph();
-			System.out.println("inputGraphName = " + inputGraphName);
 			String inputRepoURL = meta.getInputRepoURL();
-			System.out.println("inputRepoURL = " + inputRepoURL);
 			String browseFilename = meta.getBrowseFilename();
-			System.out.println("browseFilename = " + browseFilename);
 
 			try{
 
 				// Se conecta ao Branco de Grafo
 				RepositoryManager manager = InitRepo(inputRepoURL);
-				System.out.println("Manager " + manager);
 
 				// Obtendo e se conectando ao repositorio especifico do banco
 				String repo_name = CreateRepo(manager, inputExistsRepository, inputRepoName);
 				Repository repository = manager.getRepository(repo_name);
 				RepositoryConnection repoCon = ConnectRepo(repository);
-				System.out.println("Me conectei ao repositorio " + repo_name);
 
 				/////////////////////////// Recupera arquivo
 				File file = RetrieveFile(browseFilename);
-				System.out.println("Estou com o arquivo " + file);
 
 				/////////////////////////// Cria Grafo nomeado
 				IRI context = ConnectRepoAndCreateNamedGraph(repoCon, inputGraphName);
-				System.out.println("Criei o grafo " + inputGraphName);
 
 				/////////////////////////// Carrega arquivo
 				uploadFile(repoCon, file, context, inputFileFormat);
-				System.out.println("Arquivo carregado!");
 
 				//Encerrar a conexão
 				repoCon.close();
@@ -142,9 +132,7 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
 			} catch (IOException e) {
 				e.printStackTrace();
-            }
-
-			
+            }			
 
 			setOutputDone();
 			return false;
@@ -152,49 +140,49 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
 		// Executa apenas uma vez. Variavel first definida na superclasse com
 		// valor true
-		if (first) {
-			first = false;
+		// if (first) {
+		// 	first = false;
 
-			// Obtem todas as colunas ateh o step anterior.
-			// Chamar apenas apos chamar getRow()
-			RowMetaInterface rowMeta = getInputRowMeta();
-			data.outputRowMeta = meta.getInnerKeepInputFields() ? rowMeta.clone() : new RowMeta();
+		// 	// Obtem todas as colunas ateh o step anterior.
+		// 	// Chamar apenas apos chamar getRow()
+		// 	RowMetaInterface rowMeta = getInputRowMeta();
+		// 	data.outputRowMeta = meta.getInnerKeepInputFields() ? rowMeta.clone() : new RowMeta();
 
-			// Adiciona os metadados do step atual
-			meta.getFields(data.outputRowMeta, getStepname(), null, null, this);
-		}
+		// 	// Adiciona os metadados do step atual
+		// 	meta.getFields(data.outputRowMeta, getStepname(), null, null, this);
+		// }
 
 		//String inputRepoURL;
 
 		// Logica do step
 		// Leitura de campos Input
-		String inputFileFormat = meta.getInputFileFormat();
-		System.out.println("inputFileFormat = " + inputFileFormat);
-		String inputExistsRepository = meta.getExistsRepository();
-		String inputRepoName = meta.getInputRepoName();
-		String inputGraphName = meta.getInputGraph();
-		String inputRepoURL = meta.getInputRepoURL();
-		String browseFilename = meta.getBrowseFilename();
+		// String inputFileFormat = meta.getInputFileFormat();
+		// System.out.println("inputFileFormat = " + inputFileFormat);
+		// String inputExistsRepository = meta.getExistsRepository();
+		// String inputRepoName = meta.getInputRepoName();
+		// String inputGraphName = meta.getInputGraph();
+		// String inputRepoURL = meta.getInputRepoURL();
+		// String browseFilename = meta.getBrowseFilename();
 
-		try {
+		// try {
 			
-			log.logBasic("inputFileFormat = " + inputFileFormat);
-			//System.out.println();
+		// 	log.logBasic("inputFileFormat = " + inputFileFormat);
+		// 	//System.out.println();
 
-		} //catch (ParserConfigurationException e) {
-		// 	// TODO Auto-generated catch block
-		// 	e.printStackTrace();
-		// } catch (SAXException e) {
-		// 	// TODO Auto-generated catch block
-		// 	e.printStackTrace();
-		// } catch (IOException e) {
-		// 	// TODO Auto-generated catch block
-		// 	e.printStackTrace();
-		// }
-		catch (RuntimeException e) {
-            System.out.print("RuntimeException: ");
-            System.out.println(e.getMessage());
-        }
+		// } //catch (ParserConfigurationException e) {
+		// // 	// TODO Auto-generated catch block
+		// // 	e.printStackTrace();
+		// // } catch (SAXException e) {
+		// // 	// TODO Auto-generated catch block
+		// // 	e.printStackTrace();
+		// // } catch (IOException e) {
+		// // 	// TODO Auto-generated catch block
+		// // 	e.printStackTrace();
+		// // }
+		// catch (RuntimeException e) {
+        //     System.out.print("RuntimeException: ");
+        //     System.out.println(e.getMessage());
+        // }
 
 		// if (inputExistsRepository.equals(RDF_TYPE_URI)) {
 		// 	inputRepoURL = String.format(URI_OBJECT_TRIPLE_FORMAT, outputSubject, outputPredicate, outputObject);
@@ -204,11 +192,11 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 		// }
 
 		// Set output row
-		Object[] outputRow = meta.getInnerKeepInputFields() ? row : new Object[0];
+		// Object[] outputRow = meta.getInnerKeepInputFields() ? row : new Object[0];
 
-		outputRow = RowDataUtil.addValueData(outputRow, outputRow.length, inputRepoURL);
+		// outputRow = RowDataUtil.addValueData(outputRow, outputRow.length, inputRepoURL);
 
-		putRow(data.outputRowMeta, outputRow);
+		// putRow(data.outputRowMeta, outputRow);
 
 		return true;
 	}
@@ -220,7 +208,6 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
         RepositoryManager manager = RepositoryProvider.getRepositoryManager(repo_url);
         manager.init();
         manager.getAllRepositories();
-		System.out.println("Repo iniciado! " + manager);
         
         return manager;
 
@@ -250,7 +237,7 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
             try {
 
 				config_test = new FileInputStream(new File(System.getProperty("user.dir") + "\\plugins\\steps\\LoadTripleFile\\lib\\repo-defaults_test.ttl"));
-				System.out.println("Peguei config teste");
+
 
             } catch (FileNotFoundException e) {				
                 e.printStackTrace();
@@ -258,13 +245,12 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
             rdfParser_test = Rio.createParser(RDFFormat.TURTLE);
            	rdfParser_test.setRDFHandler(new StatementCollector(graph_test));
-			System.out.println("Fiz o parser");
 
 
 			try {
 
                 rdfParser_test.parse(config_test, RepositoryConfigSchema.NAMESPACE);
-				System.out.println("Fiz o parser2");
+
             }
             catch (IOException e) {
                 e.printStackTrace();
@@ -275,18 +261,15 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
             //Obtendo o repositório como recurso
             Resource repoNode_test = Models.subject(graph_test.filter(null, RDF.TYPE, RepositoryConfigSchema.REPOSITORY)).orElseThrow(() -> new RuntimeException("Oops, no <http://www.openrdf.org/config/repository#> subject found!"));
-			System.out.println("Fiz o repoNode_test");
 
             //Adicionando as configurações
             RepositoryConfig configObj = RepositoryConfig.create(graph_test, repoNode_test);
-			System.out.println("Fiz o configObj");
             manager.addRepositoryConfig(configObj);
 
             repo_name = "repo_pdi";
 
         }
 
-        System.out.println("Repo Criado!");
 		return repo_name;
 
     }
@@ -338,7 +321,6 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
                     e.printStackTrace();
 
                 }
-                System.out.println("Upload Finalizado");
                 break;
 
             // Arquivos .rdf, .rdfs, .owl, .xml
@@ -352,7 +334,6 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
                     e.printStackTrace();
 
                 }
-                System.out.println("Upload Finalizado");
                 break;
 
             // Arquivos .rj
@@ -366,7 +347,6 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
                     e.printStackTrace();
 
                 }
-                System.out.println("Upload Finalizado");
                 break;
 
             // Arquivos .n3
@@ -380,7 +360,6 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
                     e.printStackTrace();
 
                 }
-                System.out.println("Upload Finalizado");
                 break;
 
             // Arquivos .nt
@@ -394,7 +373,6 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
                     e.printStackTrace();
 
                 }
-                System.out.println("Upload Finalizado");
                 break;
 
             // Arquivos .nq
@@ -408,7 +386,6 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
                     e.printStackTrace();
 
                 }
-                System.out.println("Upload Finalizado");
                 break;
 
             // Arquivos .trig
@@ -422,7 +399,6 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
                     e.printStackTrace();
 
                 }
-                System.out.println("Upload Finalizado");
                 break;
 
             // Arquivos .trix
@@ -436,7 +412,6 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
                     e.printStackTrace();
 
                 }
-                System.out.println("Upload Finalizado");
                 break;
 
             // Arquivos .jsonld
@@ -450,7 +425,6 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
                     e.printStackTrace();
 
                 }
-                System.out.println("Upload Finalizado");
                 break;
 
         }

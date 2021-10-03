@@ -98,6 +98,15 @@
 									<outputDirectory>${project.build.directory}/lib</outputDirectory>
 								</artifactItem>
 
+								<artifactItem>
+									<groupId>com.ontotext.graphdb</groupId>
+									<artifactId>graphdb-free-runtime</artifactId>
+									<version>${graphdb.version}</version>
+									<type>jar</type>
+									<overWrite>true</overWrite>
+									<outputDirectory>${project.build.directory}/lib</outputDirectory>
+								</artifactItem>
+
 							</artifactItems>
 						</configuration>
 					</execution>
