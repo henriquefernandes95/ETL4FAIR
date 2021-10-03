@@ -318,6 +318,8 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
                 } catch (IOException e) {
 
+                    System.out.println("\\n");
+                    System.out.println("Formato de arquivo errado, por favor, informe o formato correto.");
                     e.printStackTrace();
 
                 }
@@ -331,6 +333,8 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
                 } catch (IOException e) {
 
+                    System.out.println("\\n");
+                    System.out.println("Formato de arquivo errado, por favor, informe o formato correto.");
                     e.printStackTrace();
 
                 }
@@ -344,6 +348,8 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
                 } catch (IOException e) {
 
+                    System.out.println("\\n");
+                    System.out.println("Formato de arquivo errado, por favor, informe o formato correto.");
                     e.printStackTrace();
 
                 }
@@ -357,6 +363,8 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
                 } catch (IOException e) {
 
+                    System.out.println("\\n");
+                    System.out.println("Formato de arquivo errado, por favor, informe o formato correto.");
                     e.printStackTrace();
 
                 }
@@ -370,6 +378,8 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
                 } catch (IOException e) {
 
+                    System.out.println("\\n");
+                    System.out.println("Formato de arquivo errado, por favor, informe o formato correto.");
                     e.printStackTrace();
 
                 }
@@ -383,6 +393,8 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
                 } catch (IOException e) {
 
+                    System.out.println("\\n");
+                    System.out.println("Formato de arquivo errado, por favor, informe o formato correto.");
                     e.printStackTrace();
 
                 }
@@ -396,6 +408,8 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
                 } catch (IOException e) {
 
+                    System.out.println("\\n");
+                    System.out.println("Formato de arquivo errado, por favor, informe o formato correto.");
                     e.printStackTrace();
 
                 }
@@ -409,6 +423,8 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
                 } catch (IOException e) {
 
+                    System.out.println("\\n");
+                    System.out.println("Formato de arquivo errado, por favor, informe o formato correto.");
                     e.printStackTrace();
 
                 }
@@ -422,6 +438,8 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
                 } catch (IOException e) {
 
+                    System.out.println("\\n");
+                    System.out.println("Formato de arquivo errado, por favor, informe o formato correto.");
                     e.printStackTrace();
 
                 }
