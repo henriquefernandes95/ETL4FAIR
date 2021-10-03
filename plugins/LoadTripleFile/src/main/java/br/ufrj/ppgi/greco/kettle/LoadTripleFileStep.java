@@ -2,14 +2,10 @@ package br.ufrj.ppgi.greco.kettle;
 
 import java.io.*;
 import java.net.URL;
-//import java.io.IOException;
-//import java.io.PrintStream;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 
 import org.pentaho.di.core.exception.KettleException;
+import org.pentaho.di.core.exception.KettleStepException;
+import org.pentaho.di.core.exception.KettleValueException;
 import org.pentaho.di.core.row.RowDataUtil;
 import org.pentaho.di.core.row.RowMeta;
 import org.pentaho.di.core.row.RowMetaInterface;
@@ -20,17 +16,16 @@ import org.pentaho.di.trans.step.StepDataInterface;
 import org.pentaho.di.trans.step.StepInterface;
 import org.pentaho.di.trans.step.StepMeta;
 import org.pentaho.di.trans.step.StepMetaInterface;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
 
-import org.eclipse.rdf4j.model.*;
-import org.eclipse.rdf4j.model.impl.TreeModel;
+
+import org.eclipse.rdf4j.model.Model;
+import org.eclipse.rdf4j.model.ValueFactory;
+import org.eclipse.rdf4j.model.IRI;
+import org.eclipse.rdf4j.model.Resource;
+import org.eclipse.rdf4j.model.impl.LinkedHashModel;
 import org.eclipse.rdf4j.model.util.Models;
 import org.eclipse.rdf4j.model.vocabulary.RDF;
-import org.eclipse.rdf4j.RDF4JException;
+
 import org.eclipse.rdf4j.repository.Repository;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
 import org.eclipse.rdf4j.repository.config.RepositoryConfig;
@@ -38,12 +33,11 @@ import org.eclipse.rdf4j.repository.config.RepositoryConfigSchema;
 import org.eclipse.rdf4j.repository.manager.RepositoryManager;
 import org.eclipse.rdf4j.repository.manager.RepositoryProvider;
 import org.eclipse.rdf4j.rio.*;
-import org.eclipse.rdf4j.rio.RDFFormat;
-import org.eclipse.rdf4j.rio.RDFWriter;
-import org.eclipse.rdf4j.rio.RDFParser;
-import org.eclipse.rdf4j.rio.Rio;
+
 import org.eclipse.rdf4j.rio.helpers.StatementCollector;
-import org.eclipse.rdf4j.rio.RDFHandler;
+import org.eclipse.rdf4j.rio.RDFParser;
+import org.eclipse.rdf4j.rio.RDFParseException;
+
 
 /**
  * Step Load Triple File.
@@ -55,10 +49,7 @@ import org.eclipse.rdf4j.rio.RDFHandler;
  * 
  */
 public class LoadTripleFileStep extends BaseStep implements StepInterface {
-	// Constantes
-	public static final String LITERAL_OBJECT_TRIPLE_FORMAT = "<%s> <%s> \"%s\".";
-	public static final String URI_OBJECT_TRIPLE_FORMAT = "<%s> <%s> <%s> .";
-	public static final String RDF_TYPE_URI = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type";
+
 
 	public LoadTripleFileStep(StepMeta stepMeta, StepDataInterface stepDataInterface, int copyNr, TransMeta transMeta,
 			Trans trans) {
@@ -105,6 +96,37 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 			System.out.println("inputRepoURL = " + inputRepoURL);
 			String browseFilename = meta.getBrowseFilename();
 			System.out.println("browseFilename = " + browseFilename);
+
+			try{
+
+				// Se conecta ao Branco de Grafo
+				RepositoryManager manager = InitRepo(inputRepoURL);
+				System.out.println("Manager " + manager);
+
+				// Obtendo e se conectando ao repositorio especifico do banco
+				String repo_name = CreateRepo(manager, inputExistsRepository, inputRepoName);
+				Repository repository = manager.getRepository(repo_name);
+				RepositoryConnection repoCon = ConnectRepo(repository);
+				System.out.println("Me conectei ao repositorio " + repo_name);
+
+				/////////////////////////// Recupera arquivo
+				File file = RetrieveFile(browseFilename);
+				System.out.println("Estou com o arquivo " + file);
+
+				/////////////////////////// Cria Grafo nomeado
+				IRI context = ConnectRepoAndCreateNamedGraph(repoCon, inputGraphName);
+				System.out.println("Criei o grafo " + inputGraphName);
+
+				/////////////////////////// Carrega arquivo
+				uploadFile(repoCon, file, context, inputFileFormat);
+				System.out.println("Arquivo carregado!");
+
+			} catch (IOException e) {
+				e.printStackTrace();
+            }
+
+			
+
 			setOutputDone();
 			return false;
 		}
@@ -173,28 +195,21 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 	}
 
 	// Inicializa o Repositório
-	public static RepositoryManager InitRepo(StepMetaInterface smi){
+	public static RepositoryManager InitRepo(String repo_path) {
 
-		 // Recupera variaveis da interface gráfica
-		LoadTripleFileStepMeta meta = (LoadTripleFileStepMeta) smi;
-		String inputRepoURL = meta.getInputRepoURL();
-
-        String repo_path = inputRepoURL;
-        RepositoryManager manager = RepositoryProvider.getRepositoryManager(repo_path);
+        String repo_url = repo_path;
+        RepositoryManager manager = RepositoryProvider.getRepositoryManager(repo_url);
         manager.init();
         manager.getAllRepositories();
+		System.out.println("Repo iniciado! " + manager);
         
         return manager;
 
     }
 
 	// Cria repositório
-	public static String CreateRepo(RepositoryManager manager, StepMetaInterface smi){
+	public static String CreateRepo(RepositoryManager manager, String inputExistsRepository, String inputRepoName) throws IOException {
 
-        // Recupera variaveis da interface gráfica
-        LoadTripleFileStepMeta meta = (LoadTripleFileStepMeta) smi;
-		String inputExistsRepository = meta.getExistsRepository(); // Verificador se repositorio existe ou nao
-		String inputRepoName = meta.getInputRepoName(); // nome do repositorio
 
         // Verifica se vai usar repositorio ja existente ou criar um novo
         inputExistsRepository = inputExistsRepository.toUpperCase();
@@ -211,48 +226,215 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
             InputStream config_test = null;
             RDFParser rdfParser_test = null;
-            TreeModel graph_test = new TreeModel();
+            Model graph_test = new LinkedHashModel();
 
             try {
 
-               config_test = new FileInputStream(new File("repo_config/repo-defaults_test.ttl"));
+				config_test = new FileInputStream(new File(System.getProperty("user.dir") + "\\plugins\\steps\\LoadTripleFile\\lib\\repo-defaults_test.ttl"));
+				System.out.println("Peguei config teste");
 
             } catch (FileNotFoundException e) {				
                 e.printStackTrace();
             }
 
             rdfParser_test = Rio.createParser(RDFFormat.TURTLE);
-           // rdfParser_test.setRDFHandler(new StatementCollector(graph_test));
+           	rdfParser_test.setRDFHandler(new StatementCollector(graph_test));
+			System.out.println("Fiz o parser");
 
 
-            try {
+			try {
 
                 rdfParser_test.parse(config_test, RepositoryConfigSchema.NAMESPACE);
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            } 
-
-            try {
-
-                config_test.close();
-
-            } catch (IOException e) {
+				System.out.println("Fiz o parser2");
+            }
+            catch (IOException e) {
                 e.printStackTrace();
             }
+            finally {
+
+                config_test.close(); }
 
             //Obtendo o repositório como recurso
             Resource repoNode_test = Models.subject(graph_test.filter(null, RDF.TYPE, RepositoryConfigSchema.REPOSITORY)).orElseThrow(() -> new RuntimeException("Oops, no <http://www.openrdf.org/config/repository#> subject found!"));
+			System.out.println("Fiz o repoNode_test");
 
             //Adicionando as configurações
             RepositoryConfig configObj = RepositoryConfig.create(graph_test, repoNode_test);
+			System.out.println("Fiz o configObj");
             manager.addRepositoryConfig(configObj);
 
             repo_name = "repo_pdi";
 
         }
 
-        return repo_name;
+        System.out.println("Repo Criado!");
+		return repo_name;
+
+    }
+
+	public static File RetrieveFile(String browseFilename){
+
+        // Recupera arquivo e cria objeto File
+		File file = new File(browseFilename); 
+
+        return file;
+
+    }
+
+	public static RepositoryConnection ConnectRepo(Repository repository){
+
+        //Conectar ao repositorio
+        RepositoryConnection repoCon = repository.getConnection();
+
+        return repoCon;
+
+    }
+
+	public static IRI ConnectRepoAndCreateNamedGraph(RepositoryConnection repoConnection, String inputGraphName){
+			
+        String ex = "http://etl4lod.com/";
+        ValueFactory vf = repoConnection.getValueFactory();
+        IRI context = vf.createIRI(ex, inputGraphName); // Cria contexto para novo grafo nomeado
+
+        return context;
+
+    }
+
+	public static void uploadFile(RepositoryConnection repoConnection, File file_Path, IRI context, String inputFileFormat){
+
+
+        // Base URI
+        String baseURI = "http://example.org/example/local";
+
+        switch (inputFileFormat){
+
+            // Arquivos .ttl
+            case "TURTLE":
+                try {
+
+                    repoConnection.add(file_Path, baseURI, RDFFormat.TURTLE, context);
+
+                } catch (IOException e) {
+
+                    e.printStackTrace();
+
+                }
+                System.out.println("Upload Finalizado");
+                break;
+
+            // Arquivos .rdf, .rdfs, .owl, .xml
+            case "RDFXML":
+                try {
+
+                    repoConnection.add(file_Path, baseURI, RDFFormat.RDFXML, context);
+
+                } catch (IOException e) {
+
+                    e.printStackTrace();
+
+                }
+                System.out.println("Upload Finalizado");
+                break;
+
+            // Arquivos .rj
+            case "RDFJSON":
+                try {
+
+                    repoConnection.add(file_Path, baseURI, RDFFormat.RDFJSON, context);
+
+                } catch (IOException e) {
+
+                    e.printStackTrace();
+
+                }
+                System.out.println("Upload Finalizado");
+                break;
+
+            // Arquivos .n3
+            case "N3":
+                try {
+
+                    repoConnection.add(file_Path, baseURI, RDFFormat.N3, context);
+
+                } catch (IOException e) {
+
+                    e.printStackTrace();
+
+                }
+                System.out.println("Upload Finalizado");
+                break;
+
+            // Arquivos .nt
+            case "NTRIPLES":
+                try {
+
+                    repoConnection.add(file_Path, baseURI, RDFFormat.NTRIPLES, context);
+
+                } catch (IOException e) {
+
+                    e.printStackTrace();
+
+                }
+                System.out.println("Upload Finalizado");
+                break;
+
+            // Arquivos .nq
+            case "NQUAD":
+                try {
+
+                    repoConnection.add(file_Path, baseURI, RDFFormat.NQUADS, context);
+
+                } catch (IOException e) {
+
+                    e.printStackTrace();
+
+                }
+                System.out.println("Upload Finalizado");
+                break;
+
+            // Arquivos .trig
+            case "TRIG":
+                try {
+
+                    repoConnection.add(file_Path, baseURI, RDFFormat.TRIG, context);
+
+                } catch (IOException e) {
+
+                    e.printStackTrace();
+
+                }
+                System.out.println("Upload Finalizado");
+                break;
+
+            // Arquivos .trix
+            case "TRIX":
+                try {
+
+                    repoConnection.add(file_Path, baseURI, RDFFormat.TRIX, context);
+
+                } catch (IOException e) {
+
+                    e.printStackTrace();
+
+                }
+                System.out.println("Upload Finalizado");
+                break;
+
+            // Arquivos .jsonld
+            case "JSONLD":
+                try {
+
+                    repoConnection.add(file_Path, baseURI, RDFFormat.JSONLD,context);
+
+                } catch (IOException e) {
+
+                    e.printStackTrace();
+
+                }
+                System.out.println("Upload Finalizado");
+                break;
+
+        }
 
     }
 }

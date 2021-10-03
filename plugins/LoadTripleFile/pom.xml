@@ -44,9 +44,14 @@
 									<fileset dir="${basedir}/etc" includes="**/*.png,**/*.xml,**/*.properties" />
 								</copy>
 								<echo
-									message="Copying ${basedir}\libs\*.jar to ${pdi.home}/${pdi.plugin.dir}" />
+									message="Copying ${basedir}\lib\*.jar to ${pdi.home}/${pdi.plugin.dir}" />
 								<copy todir="${pdi.home}/${pdi.plugin.dir}/lib" overwrite="true">
 									<fileset dir="${project.build.directory}/lib" includes="**/*.jar" />
+								</copy>
+								<echo
+									message="Copying ${basedir}\repo_config\*.jar to ${pdi.home}/${pdi.plugin.dir}/lib" />
+								<copy todir="${pdi.home}/${pdi.plugin.dir}/lib" overwrite="true">
+									<fileset dir="${basedir}/repo_config" includes="**/*.jar,**/*.ttl" />
 								</copy>
 
 								<echo
@@ -60,6 +65,7 @@
 									dir="${pdi.home}/${pdi.plugin.dir}">
 									<include name="plugin.xml" />
 								</replace>
+
 								
 							</target>
 						</configuration>
@@ -91,15 +97,51 @@
 									<overWrite>true</overWrite>
 									<outputDirectory>${project.build.directory}/lib</outputDirectory>
 								</artifactItem>
+								<!--
+								<artifactItem>
+									<groupId>org.eclipse.rdf4j</groupId>
+									<artifactId>rdf4j-model-api</artifactId>
+									<version>${rdf4j.version}</version>
+									<type>jar</type>
+									<overWrite>true</overWrite>
+									<outputDirectory>${project.build.directory}/lib</outputDirectory>
+								</artifactItem>
 
 								<artifactItem>
 									<groupId>org.eclipse.rdf4j</groupId>
-									<artifactId>rdf4j-bom</artifactId>
+									<artifactId>rdf4j-rio-api</artifactId>
+									<version>${rdf4j.version}</version>
+									<type>jar</type>
+									<overWrite>true</overWrite>
+									<outputDirectory>${project.build.directory}/lib</outputDirectory>
+								</artifactItem>
+
+								 <artifactItem>
+									<groupId>org.eclipse.rdf4j</groupId>
+									<artifactId>rdf4j-repository-api</artifactId>
+									<version>${rdf4j.version}</version>
+									<type>jar</type>
+									<overWrite>true</overWrite>
+									<outputDirectory>${project.build.directory}/lib</outputDirectory>
+								</artifactItem> 
+
+								<artifactItem>
+									<groupId>org.eclipse.rdf4j</groupId>
+									<artifactId>rdf4j-repository-manager</artifactId>
+									<version>${rdf4j.version}</version>
+									<type>jar</type>
+									<overWrite>true</overWrite>
+									<outputDirectory>${project.build.directory}/lib</outputDirectory>
+								</artifactItem> 
+
+								<artifactItem>
+									<groupId>org.eclipse.rdf4j</groupId>
+									<artifactId>rdf4j-client</artifactId>
 									<version>${rdf4j.version}</version>
 									<type>pom</type>
 									<overWrite>true</overWrite>
 									<outputDirectory>${project.build.directory}/lib</outputDirectory>
-								</artifactItem>
+								</artifactItem> -->
 
 							</artifactItems>
 						</configuration>
@@ -124,13 +166,9 @@
 		</resources>
 	</build>
 
+
 	<dependencies>
-		<dependency>
-			<groupId>org.eclipse.rdf4j</groupId>
-			<artifactId>rdf4j-storage</artifactId>
-			<version>${rdf4j.version}</version>
-			<type>pom</type>
-		</dependency>
 	</dependencies>
+
 
 </project>
