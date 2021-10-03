@@ -2,47 +2,47 @@
 <project name="maven-antrun-" default="i18n-hack"  >
 <target name="i18n-hack">
   <echo message="Copying i18n files"/>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/Annotator/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/src/main/java"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/Annotator/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/LoadTripleFile/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/src/main/java"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/LoadTripleFile/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/DataCube/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/src/main/java"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/DataCube/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/DataPropertyMapping/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/src/main/java"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/DataPropertyMapping/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/GraphTriplify/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/src/main/java"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/GraphTriplify/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/GraphSemanticLevelMarker/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/src/main/java"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/GraphSemanticLevelMarker/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/GraphSparqlEndpoint/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/src/main/java"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/GraphSparqlEndpoint/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/ntriplegenerator/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/src/main/java"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/ntriplegenerator/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/ObjectPropertyMapping/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/src/main/java"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/ObjectPropertyMapping/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/OwlInput/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/src/main/java"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/OwlInput/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/SparqlEndpoint/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/src/main/java"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/SparqlEndpoint/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/SparqlRunQuery/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/src/main/java"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/SparqlRunQuery/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/SparqlUpdateOutput/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/src/main/java"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/SparqlUpdateOutput/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/TurtleGenerator/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins/src/main/java"/>
+  <copy todir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/TurtleGenerator/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins/src/main/java"/>
   </copy>
 </target>
 </project>
