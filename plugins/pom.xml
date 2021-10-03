@@ -3,6 +3,16 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<developers>
+		<developer>
+			<id>nickgp</id>
+			<name>Nickolas Gomes Pinto</name>
+			<email>nickolasgomesp@gmail.com</email>
+			<organization>UFRJ (PPGI/GRECO)</organization>
+			<organizationUrl>http://greco.ppgi.ufrj.br</organizationUrl>
+		</developer>
+	</developers>
+	
 	<groupId>br.ufrj.ppgi.greco.kettle</groupId>
 	<artifactId>plugins</artifactId>
 	<packaging>pom</packaging>

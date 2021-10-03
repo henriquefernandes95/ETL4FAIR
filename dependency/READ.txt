@@ -1,0 +1,1 @@
+o JDK 8 e o instalador do PDI ultrapassaram o limite de tamanho permitido para o diretório, por isso, procure por java 8 e o instalador do PDI na internet.

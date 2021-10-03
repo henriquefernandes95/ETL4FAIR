@@ -2,15 +2,17 @@
 
 [![latest release](https://img.shields.io/github/release/johncurcio/ETL4LODPlus.svg?style=for-the-badge)](https://github.com/johncurcio/ETL4LODPlus/releases) [![scrutinizer code quality](https://img.shields.io/scrutinizer/g/johncurcio/ETL4LODPlus.svg?style=for-the-badge)](https://scrutinizer-ci.com/g/johncurcio/ETL4LODPlus/) [![Build Status](https://img.shields.io/scrutinizer/build/g/johncurcio/ETL4LODPlus.svg?style=for-the-badge)](https://scrutinizer-ci.com/g/johncurcio/ETL4LODPlus/build-status/master) [![PRs Welcome](https://img.shields.io/badge/prs-welcome-f23c50.svg?longCache=true&style=for-the-badge)](http://makeapullrequest.com) [![issues open](https://img.shields.io/github/issues/johncurcio/ETL4LODPlus.svg?style=for-the-badge)](https://github.com/johncurcio/ETL4LODPlus/issues) [![MIT License](https://img.shields.io/badge/license-MIT-FF8B0D.svg?longCache=true&style=for-the-badge)](LICENSE) 
 
-ETL4LOD+ é uma extensão do Kettle baseada no [ETL4LOD](https://github.com/rogersmendonca/ETL4LOD) para trabalhar com Linked Open Data. 
+ETL4LOD+FAIR é uma extensão do Kettle baseada no [ETL4LOD+](https://github.com/johncurcio/ETL4LODPlus/releases) para trabalhar com Linked Open Data, integrando com o GraphDB e FAIR Datapoints.
 
 ## Usando o Projeto
 
-Usar o projeto é tão simples quanto [baixar a versão mais recente dos plugins](https://github.com/johncurcio/ETL4LODPlus/releases) e extrair o ``.tar.gz`` na pasta ``plugins/`` da sua instalação do Kettle 8.1+.
+Usar o projeto é tão simples quanto [baixar a versão mais recente dos plugins](https://github.com/NickolasGomes/ETL4LOD-FAIR/releases) e extrair o ``.tar.gz`` na pasta ``plugins/`` da sua instalação do Kettle 8.1+.
 
 ## Desenvolvimento
 
 ### Pré-requisitos
+
+* [Pentaho Data Integration](https://sourceforge.net/projects/pentaho/)
 
 Este projeto tem as seguintes dependências:
 
@@ -18,11 +20,13 @@ Este projeto tem as seguintes dependências:
 * [Maven](https://maven.apache.org/) para gestão das dependências.
 * [Kettle 8.1+](https://sourceforge.net/projects/pentaho/) para testes e deploy.
 
+Todas as dependências estão na pasta "dependency" para instalação.
+
 Este projeto foi desenvolvido na IDE Eclipse, porém é agnóstico em relação a IDEs - não é necessário o uso do Eclipse para desenvolver neste projeto.
 
 ### Instalando
 
-Para rodar o projeto em sua máquina, mude a variável ``pdi.home`` no pom do projeto pai ``plugins`` para a sua instalação do Kettle 8.1 e rode ``mvn clean install`` projeto pai. Isso instalará os plugins no Kettle especificado em ``pdi.home``.
+Para rodar o projeto em sua máquina, instale todos os pré-requisitos (cuidado especial na versão do java, que tem que ser Java 8), mude a variável ``pdi.home``, que representa o caminho referente a sua instalação do Pentaho Data Integration, no pom do projeto pai ``plugins\pom.xml`` - <pdi.home>Caminho\data-integration</pdi.home>. Após isso, rode o comando ``mvn clean install`` dentro do pasta ``plugins`` (projeto pai). Isso instalará os plugins no Kettle especificado em ``pdi.home``.
 
 Abra o Kettle 8.1 e uma pasta chamada LinkedDataBR deve aparecer com os plugins deste projeto. 
 
@@ -48,4 +52,4 @@ Este projeto usa a licença do MIT, veja [LICENSE.md](LICENSE) para mais detalhe
 
 ## Inspirado em
 
-* [ETL4LOD](https://github.com/rogersmendonca/ETL4LOD) e [ETL4LOD-graph](https://github.com/rogersmendonca/ETL4LOD-Graph)
+* [ETL4LOD](https://github.com/rogersmendonca/ETL4LOD),  [ETL4LOD-graph](https://github.com/rogersmendonca/ETL4LOD-Graph) e [ETL4LOD+](https://github.com/johncurcio/ETL4LODPlus/)

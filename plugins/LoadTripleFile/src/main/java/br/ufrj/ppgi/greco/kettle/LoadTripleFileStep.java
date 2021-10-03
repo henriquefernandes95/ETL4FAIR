@@ -138,66 +138,6 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 			return false;
 		}
 
-		// Executa apenas uma vez. Variavel first definida na superclasse com
-		// valor true
-		// if (first) {
-		// 	first = false;
-
-		// 	// Obtem todas as colunas ateh o step anterior.
-		// 	// Chamar apenas apos chamar getRow()
-		// 	RowMetaInterface rowMeta = getInputRowMeta();
-		// 	data.outputRowMeta = meta.getInnerKeepInputFields() ? rowMeta.clone() : new RowMeta();
-
-		// 	// Adiciona os metadados do step atual
-		// 	meta.getFields(data.outputRowMeta, getStepname(), null, null, this);
-		// }
-
-		//String inputRepoURL;
-
-		// Logica do step
-		// Leitura de campos Input
-		// String inputFileFormat = meta.getInputFileFormat();
-		// System.out.println("inputFileFormat = " + inputFileFormat);
-		// String inputExistsRepository = meta.getExistsRepository();
-		// String inputRepoName = meta.getInputRepoName();
-		// String inputGraphName = meta.getInputGraph();
-		// String inputRepoURL = meta.getInputRepoURL();
-		// String browseFilename = meta.getBrowseFilename();
-
-		// try {
-			
-		// 	log.logBasic("inputFileFormat = " + inputFileFormat);
-		// 	//System.out.println();
-
-		// } //catch (ParserConfigurationException e) {
-		// // 	// TODO Auto-generated catch block
-		// // 	e.printStackTrace();
-		// // } catch (SAXException e) {
-		// // 	// TODO Auto-generated catch block
-		// // 	e.printStackTrace();
-		// // } catch (IOException e) {
-		// // 	// TODO Auto-generated catch block
-		// // 	e.printStackTrace();
-		// // }
-		// catch (RuntimeException e) {
-        //     System.out.print("RuntimeException: ");
-        //     System.out.println(e.getMessage());
-        // }
-
-		// if (inputExistsRepository.equals(RDF_TYPE_URI)) {
-		// 	inputRepoURL = String.format(URI_OBJECT_TRIPLE_FORMAT, outputSubject, outputPredicate, outputObject);
-		// } else {
-
-		// 	inputRepoURL = String.format(LITERAL_OBJECT_TRIPLE_FORMAT, outputSubject, outputPredicate, outputObject);
-		// }
-
-		// Set output row
-		// Object[] outputRow = meta.getInnerKeepInputFields() ? row : new Object[0];
-
-		// outputRow = RowDataUtil.addValueData(outputRow, outputRow.length, inputRepoURL);
-
-		// putRow(data.outputRowMeta, outputRow);
-
 		return true;
 	}
 
@@ -230,26 +170,26 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 				
         } else if( inputExistsRepository.equals("N") ){ // Repositorio nao existe, cria um default
 
-            InputStream config_test = null;
-            RDFParser rdfParser_test = null;
-            TreeModel graph_test = new TreeModel();
+            InputStream config_file = null;
+            RDFParser rdfParser_configFile = null;
+            TreeModel graph_Node = new TreeModel();
 
             try {
 
-				config_test = new FileInputStream(new File(System.getProperty("user.dir") + "\\plugins\\steps\\LoadTripleFile\\lib\\repo-defaults_test.ttl"));
+				config_file = new FileInputStream(new File(System.getProperty("user.dir") + "\\plugins\\steps\\LoadTripleFile\\lib\\repo-defaults_test.ttl"));
 
 
             } catch (FileNotFoundException e) {				
                 e.printStackTrace();
             }
 
-            rdfParser_test = Rio.createParser(RDFFormat.TURTLE);
-           	rdfParser_test.setRDFHandler(new StatementCollector(graph_test));
+            rdfParser_configFile = Rio.createParser(RDFFormat.TURTLE);
+           	rdfParser_configFile.setRDFHandler(new StatementCollector(graph_Node));
 
 
 			try {
 
-                rdfParser_test.parse(config_test, RepositoryConfigSchema.NAMESPACE);
+                rdfParser_configFile.parse(config_file, RepositoryConfigSchema.NAMESPACE);
 
             }
             catch (IOException e) {
@@ -257,13 +197,13 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
             }
             finally {
 
-                config_test.close(); }
+                config_file.close(); }
 
             //Obtendo o repositório como recurso
-            Resource repoNode_test = Models.subject(graph_test.filter(null, RDF.TYPE, RepositoryConfigSchema.REPOSITORY)).orElseThrow(() -> new RuntimeException("Oops, no <http://www.openrdf.org/config/repository#> subject found!"));
+            Resource repoNode_test = Models.subject(graph_Node.filter(null, RDF.TYPE, RepositoryConfigSchema.REPOSITORY)).orElseThrow(() -> new RuntimeException("Oops, no <http://www.openrdf.org/config/repository#> subject found!"));
 
             //Adicionando as configurações
-            RepositoryConfig configObj = RepositoryConfig.create(graph_test, repoNode_test);
+            RepositoryConfig configObj = RepositoryConfig.create(graph_Node, repoNode_test);
             manager.addRepositoryConfig(configObj);
 
             repo_name = "repo_pdi";

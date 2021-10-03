@@ -311,12 +311,12 @@ public class LoadTripleFileStepDialog extends BaseStepDialog implements StepDial
 		wbBrowse.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
 				FileDialog dialog = new FileDialog(shell, SWT.OPEN);
-				dialog.setFilterExtensions(new String[] { "*.xml;*.XML", "*" });
+				dialog.setFilterExtensions(new String[] { "*.rdf;*.n3;*.ttl;*.xml;*owl;*.rdfs;*.rj;*.nt;*.nq;*.trig;*.trix;*.jsonld", "*" });
 				if (wBrowse.getText() != null) {
 					dialog.setFileName(wBrowse.getText());
 				}
 
-				dialog.setFilterNames(new String[] { "Text files", "All files" });
+				dialog.setFilterNames(new String[] { "RDF Files", "All files" });
 
 				if (dialog.open() != null) {
 					String str = dialog.getFilterPath() + System.getProperty("file.separator") + dialog.getFileName();
@@ -356,17 +356,17 @@ public class LoadTripleFileStepDialog extends BaseStepDialog implements StepDial
 		};
 		wStepname.addSelectionListener(lsDef);
 
-		// Detect X or ALT-F4 or something that kills this window...
+		// Listener para delete fechar pagina
 		shell.addShellListener(new ShellAdapter() {
 			public void shellClosed(ShellEvent e) {
 				cancel();
 			}
 		});
 
-		// Populate the data of the controls
+		// Popula data dos controles criados
 		getData();
 
-		// Set the shell size, based upon previous time...
+		// Seta tamanho do shell
 		setSize();
 
 		// Alarga um pouco mais a janela

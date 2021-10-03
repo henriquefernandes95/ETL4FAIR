@@ -71,9 +71,6 @@ public class LoadTripleFileStepMeta extends BaseStepMeta implements StepMetaInte
 	public String browseFilename;
 	
 
-	// Campos Step - Output
-	//private String ;
-
 	// Campos Step - Inner
 	private Boolean innerKeepInputFields;
 
