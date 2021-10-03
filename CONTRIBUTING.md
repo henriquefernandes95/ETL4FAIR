@@ -33,11 +33,11 @@ Para adicionar uma dependência para um plugin é necessário criar uma variáve
 <library name="lib/dependency-{dependency.version}.jar"/>
 ```
 
-O ``pom.xml`` do filho também precisa ser atualizado para copiar essa dependência nova automaticamente e substituir a variável no ``plugin.xml``. Três partes do pom podem precisar ser modificadas.
+O ``pom.xml`` do filho também precisa ser atualizado para copiar essa dependência nova automaticamente e substituir a variável no ``plugin.xml``. Três partes do pom podem precisar ser modificadas:
 
-1. Adicionar uma nova dependência ao pom do plugin em ``<dependency>``.
+1. Adicionar um novo ``<replace>`` ao goal ``copy-files-to-kettle``. O replace vai substituir no ``plugin.xml`` o valor da variável ``{dependency.version}`` com o valor que foi colocado no pom do projeto pai em ``${dependency.version}``. Mais informações em [maven-ant-run replace task](https://ant.apache.org/manual/Tasks/replace.html).
 2. Adicionar um ``<artifactItem>`` ao goal ``copy``. Isso vai garantir que a dependência adicionada seja copiada para a pasta lib do plugin. 
-2. Adicionar um novo ``<replace>`` ao goal ``copy-files-to-kettle``. O replace vai substituir no ``plugin.xml`` o valor da variável ``{dependency.version}`` com o valor que foi colocado no pom do projeto pai em ``${dependency.version}``. Mais informações em [maven-ant-run replace task](https://ant.apache.org/manual/Tasks/replace.html).
+2. Adicionar uma nova dependência ao pom do plugin em ``<dependency>``.
 
 ## i18n
 
