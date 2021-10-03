@@ -64,7 +64,7 @@
 								<replace token='{rdf4j.version}' value='${rdf4j.version}'
 									dir="${pdi.home}/${pdi.plugin.dir}">
 									<include name="plugin.xml" />
-								</replace>
+								</replace> 
 
 								
 							</target>
@@ -123,6 +123,11 @@
 
 
 	<dependencies>
+		<dependency>
+			<groupId>com.ontotext.graphdb</groupId>
+			<artifactId>graphdb-free-runtime</artifactId>
+			<version>${graphdb.version}</version>
+		</dependency>
 	</dependencies>
 
 

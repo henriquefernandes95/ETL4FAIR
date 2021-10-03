@@ -1,7 +1,12 @@
 package br.ufrj.ppgi.greco.kettle;
 
 import java.io.*;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Iterator;
 
 import org.pentaho.di.core.exception.KettleException;
 import org.pentaho.di.core.exception.KettleStepException;
@@ -17,26 +22,35 @@ import org.pentaho.di.trans.step.StepInterface;
 import org.pentaho.di.trans.step.StepMeta;
 import org.pentaho.di.trans.step.StepMetaInterface;
 
-
 import org.eclipse.rdf4j.model.Model;
 import org.eclipse.rdf4j.model.ValueFactory;
 import org.eclipse.rdf4j.model.IRI;
 import org.eclipse.rdf4j.model.Resource;
+import org.eclipse.rdf4j.model.Statement;
 import org.eclipse.rdf4j.model.impl.LinkedHashModel;
+import org.eclipse.rdf4j.model.impl.TreeModel;
 import org.eclipse.rdf4j.model.util.Models;
 import org.eclipse.rdf4j.model.vocabulary.RDF;
-
 import org.eclipse.rdf4j.repository.Repository;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
 import org.eclipse.rdf4j.repository.config.RepositoryConfig;
 import org.eclipse.rdf4j.repository.config.RepositoryConfigSchema;
+import org.eclipse.rdf4j.repository.http.config.HTTPRepositoryConfig;
+import org.eclipse.rdf4j.repository.manager.RemoteRepositoryManager;
 import org.eclipse.rdf4j.repository.manager.RepositoryManager;
 import org.eclipse.rdf4j.repository.manager.RepositoryProvider;
 import org.eclipse.rdf4j.rio.*;
-
+import org.eclipse.rdf4j.rio.RDFFormat;
 import org.eclipse.rdf4j.rio.helpers.StatementCollector;
 import org.eclipse.rdf4j.rio.RDFParser;
+import org.eclipse.rdf4j.rio.Rio;
 import org.eclipse.rdf4j.rio.RDFParseException;
+
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.slf4j.Marker;
+import org.slf4j.MarkerFactory;
 
 
 /**
@@ -120,6 +134,11 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 				/////////////////////////// Carrega arquivo
 				uploadFile(repoCon, file, context, inputFileFormat);
 				System.out.println("Arquivo carregado!");
+
+				//Encerrar a conexão
+				repoCon.close();
+				repository.shutDown();
+				manager.shutDown();
 
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -226,7 +245,7 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
             InputStream config_test = null;
             RDFParser rdfParser_test = null;
-            Model graph_test = new LinkedHashModel();
+            TreeModel graph_test = new TreeModel();
 
             try {
 

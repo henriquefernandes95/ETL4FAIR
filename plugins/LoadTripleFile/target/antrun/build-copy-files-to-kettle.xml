@@ -15,7 +15,7 @@
   </copy>
   <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\LoadTripleFile\target\LoadTripleFile-1.1.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LoadTripleFile"/>
   <copy file="E:\Documentos\UFRJ\TCC\ETL4LOD_FAIR\-BETA-ETL4LOD-\plugins\LoadTripleFile\target/LoadTripleFile-1.1.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LoadTripleFile/LoadTripleFile.jar" overwrite="true"/>
-  <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LoadTripleFile" value="3.7.3" token="{rdf4j.version}">
+  <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/LoadTripleFile" value="3.7.1" token="{rdf4j.version}">
     <include name="plugin.xml"/>
   </replace>
 </target>
