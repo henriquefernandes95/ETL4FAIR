@@ -247,21 +247,13 @@
 			<version>${graphdb.version}</version>
 		</dependency>
 
-
-		<!-- <dependency>
-			<groupId>org.eclipse.rdf4j</groupId>
-			<artifactId>rdf4j-storage</artifactId>
-			<version>${rdf4j.version}</version>
-			<type>pom</type> 
-		</dependency> -->
-
 	</dependencies>
 
 
 	<modules>
 		<module>Annotator</module>
 		<module>LoadTripleFile</module>
-		<!-- <module>DataCube</module>
+		<module>DataCube</module>
 		<module>DataPropertyMapping</module>
 		<module>GraphTriplify</module>
 		<module>GraphSemanticLevelMarker</module>
@@ -273,6 +265,6 @@
 		<module>SparqlEndpoint</module>
 		<module>SparqlRunQuery</module>
 		<module>SparqlUpdateOutput</module>
-		<module>TurtleGenerator</module> -->
+		<module>TurtleGenerator</module> 
 	</modules>
 </project>
