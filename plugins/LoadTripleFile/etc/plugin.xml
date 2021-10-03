@@ -11,11 +11,6 @@
 	<library name="lib/KettlePluginTools-1.0.jar"/>
      <library name="lib/graphdb-free-runtime-9.9.0.jar"/>
      <library name="lib/eclipse-rdf4j-{rdf4j.version}-onejar.jar"/> 
-     <!--   
-     <library name="lib/rdf4j-model-api-{rdf4j.version}.jar"/>
-     <library name="lib/rdf4j-rio-api-{rdf4j.version}.jar"/>
-     <library name="lib/rdf4j-repository-api-{rdf4j.version}.jar"/>  
-     <library name="lib/rdf4j-repository-manager-{rdf4j.version}.jar"/> -->
      </libraries>
 	
 	<localized_category>
