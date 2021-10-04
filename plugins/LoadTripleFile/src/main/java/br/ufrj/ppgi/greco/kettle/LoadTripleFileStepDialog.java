@@ -171,7 +171,7 @@ public class LoadTripleFileStepDialog extends BaseStepDialog implements StepDial
 		fdStepname.right = new FormAttachment(100, 0);
 		wStepname.setLayoutData(fdStepname);
 
-		// Campo com URL do repositório
+		// Campo com URL do Banco em Grafos
 		wlRepoURL = new Label(shell, SWT.RIGHT);
 		wlRepoURL.setText(BaseMessages.getString(PKG, "LoadTripleFile.RepoURLField.Label")); 
 		props.setLook(wlRepoURL);
