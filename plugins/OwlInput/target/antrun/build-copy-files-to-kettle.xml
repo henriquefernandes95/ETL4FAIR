@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="copy-files-to-kettle"  >
 <target name="copy-files-to-kettle">
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\OwlInput\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/OwlInput"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\OwlInput\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/OwlInput"/>
   <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/OwlInput" overwrite="true">
-    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\OwlInput/etc"/>
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\OwlInput/etc"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\OwlInput\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/OwlInput"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\OwlInput\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/OwlInput"/>
   <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/OwlInput/lib" overwrite="true">
-    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\OwlInput\target/lib"/>
+    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\OwlInput\target/lib"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\OwlInput\target\OwlInput-1.1.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/OwlInput"/>
-  <copy file="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\OwlInput\target/OwlInput-1.1.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/OwlInput/OwlInput.jar" overwrite="true"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\OwlInput\target\OwlInput-1.1.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/OwlInput"/>
+  <copy file="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\OwlInput\target/OwlInput-1.1.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/OwlInput/OwlInput.jar" overwrite="true"/>
   <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/OwlInput" value="1.4.18" token="{xstream.version}">
     <include name="plugin.xml"/>
   </replace>

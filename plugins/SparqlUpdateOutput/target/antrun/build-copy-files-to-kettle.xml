@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="copy-files-to-kettle"  >
 <target name="copy-files-to-kettle">
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\SparqlUpdateOutput\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlUpdateOutput\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput"/>
   <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput" overwrite="true">
-    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\SparqlUpdateOutput/etc"/>
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlUpdateOutput/etc"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\SparqlUpdateOutput\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlUpdateOutput\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput"/>
   <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput/lib" overwrite="true">
-    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\SparqlUpdateOutput\target/lib"/>
+    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlUpdateOutput\target/lib"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\SparqlUpdateOutput\target\SparqlUpdateOutput-1.1.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput"/>
-  <copy file="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\SparqlUpdateOutput\target/SparqlUpdateOutput-1.1.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput/SparqlUpdateOutput.jar" overwrite="true"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlUpdateOutput\target\SparqlUpdateOutput-1.1.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput"/>
+  <copy file="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlUpdateOutput\target/SparqlUpdateOutput-1.1.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput/SparqlUpdateOutput.jar" overwrite="true"/>
   <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput" value="3.17.0" token="{apache.jena.version}">
     <include name="plugin.xml"/>
   </replace>

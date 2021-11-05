@@ -234,7 +234,7 @@ public class LoadTripleFileStep extends BaseStep implements StepInterface {
 
 	public static IRI ConnectRepoAndCreateNamedGraph(RepositoryConnection repoConnection, String inputGraphName){
 			
-        String ex = "http://etl4lod.com/";
+        String ex = "http://etl4fair.com/";
         ValueFactory vf = repoConnection.getValueFactory();
         IRI context = vf.createIRI(ex, inputGraphName); // Cria contexto para novo grafo nomeado
 

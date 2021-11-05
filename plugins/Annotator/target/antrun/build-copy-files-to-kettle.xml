@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="copy-files-to-kettle"  >
 <target name="copy-files-to-kettle">
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\Annotator\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/Annotator"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\Annotator\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/Annotator"/>
   <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/Annotator" overwrite="true">
-    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\Annotator/etc"/>
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\Annotator/etc"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\Annotator\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/Annotator"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\Annotator\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/Annotator"/>
   <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/Annotator/lib" overwrite="true">
-    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\Annotator\target/lib"/>
+    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\Annotator\target/lib"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\Annotator\target\Annotator-1.1.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/Annotator"/>
-  <copy file="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\Annotator\target/Annotator-1.1.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/Annotator/Annotator.jar" overwrite="true"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\Annotator\target\Annotator-1.1.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/Annotator"/>
+  <copy file="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\Annotator\target/Annotator-1.1.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/Annotator/Annotator.jar" overwrite="true"/>
 </target>
 </project>

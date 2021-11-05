@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="copy-files-to-kettle"  >
 <target name="copy-files-to-kettle">
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\GraphSparqlEndpoint\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSparqlEndpoint"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\GraphSparqlEndpoint\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSparqlEndpoint"/>
   <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSparqlEndpoint" overwrite="true">
-    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\GraphSparqlEndpoint/etc"/>
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\GraphSparqlEndpoint/etc"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\GraphSparqlEndpoint\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSparqlEndpoint"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\GraphSparqlEndpoint\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSparqlEndpoint"/>
   <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSparqlEndpoint/lib" overwrite="true">
-    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\GraphSparqlEndpoint\target/lib"/>
+    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\GraphSparqlEndpoint\target/lib"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\GraphSparqlEndpoint\target\GraphSparqlEndpoint-1.0.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSparqlEndpoint"/>
-  <copy file="E:\Documentos\UFRJ\TCC\ETL4LOD+Fair\ETL4LODPlusFAIR\plugins\GraphSparqlEndpoint\target/GraphSparqlEndpoint-1.0.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSparqlEndpoint/GraphSparqlEndpoint.jar" overwrite="true"/>
+  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\GraphSparqlEndpoint\target\GraphSparqlEndpoint-1.0.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSparqlEndpoint"/>
+  <copy file="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\GraphSparqlEndpoint\target/GraphSparqlEndpoint-1.0.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSparqlEndpoint/GraphSparqlEndpoint.jar" overwrite="true"/>
   <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSparqlEndpoint" value="1.4.18" token="{xstream.version}">
     <include name="plugin.xml"/>
   </replace>
