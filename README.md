@@ -1,6 +1,5 @@
 ![](img/logo_big.png)
 
-[![latest release](https://img.shields.io/github/release/johncurcio/ETL4LODPlus.svg?style=for-the-badge)](https://github.com/johncurcio/ETL4LODPlus/releases) [![scrutinizer code quality](https://img.shields.io/scrutinizer/g/johncurcio/ETL4LODPlus.svg?style=for-the-badge)](https://scrutinizer-ci.com/g/johncurcio/ETL4LODPlus/) [![Build Status](https://img.shields.io/scrutinizer/build/g/johncurcio/ETL4LODPlus.svg?style=for-the-badge)](https://scrutinizer-ci.com/g/johncurcio/ETL4LODPlus/build-status/master) [![PRs Welcome](https://img.shields.io/badge/prs-welcome-f23c50.svg?longCache=true&style=for-the-badge)](http://makeapullrequest.com) [![issues open](https://img.shields.io/github/issues/johncurcio/ETL4LODPlus.svg?style=for-the-badge)](https://github.com/johncurcio/ETL4LODPlus/issues) [![MIT License](https://img.shields.io/badge/license-MIT-FF8B0D.svg?longCache=true&style=for-the-badge)](LICENSE) 
 
 ETL4LOD+FAIR é uma extensão do Kettle baseada no [ETL4LOD+](https://github.com/johncurcio/ETL4LODPlus/releases) para trabalhar com Linked Open Data, integrando com o GraphDB e FAIR Datapoints.
 
