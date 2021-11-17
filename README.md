@@ -5,7 +5,7 @@ ETL4LOD+FAIR é uma extensão do Kettle baseada no [ETL4LOD+](https://github.com
 
 ## Usando o Projeto
 
-Usar o projeto é tão simples quanto [baixar a versão mais recente dos plugins](https://github.com/NickolasGomes/ETL4LOD-FAIR/releases) e extrair o ``.tar.gz`` na pasta ``plugins/`` da sua instalação do Kettle 8.1+.
+Usar o projeto é tão simples quanto [baixar a versão mais recente dos plugins](https://github.com/NickolasGomes/ETL4LOD-FAIR/releases) e extrair o ``.tar.gz`` na pasta ``plugins/`` da sua instalação do Kettle 9.2+.
 
 ## Desenvolvimento
 
