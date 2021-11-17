@@ -27,7 +27,7 @@ Este projeto foi desenvolvido na IDE Eclipse, porém é agnóstico em relação 
 
 Para rodar o projeto em sua máquina, instale todos os pré-requisitos (cuidado especial na versão do java, que tem que ser Java 8), mude a variável ``pdi.home``, que representa o caminho referente a sua instalação do Pentaho Data Integration, no pom do projeto pai ``ETL4LODPLUSFAIR\plugins\pom.xml`` - <pdi.home>Caminho\data-integration</pdi.home>. Após isso, rode o comando ``mvn clean install`` dentro do pasta ``plugins`` (projeto pai). Isso instalará os plugins no Kettle especificado em ``pdi.home``.
 
-Abra o Kettle 8.1 e uma pasta chamada LinkedDataBR deve aparecer com os plugins deste projeto. 
+Abra o Kettle 9.2 e uma pasta chamada LinkedDataBR deve aparecer com os plugins deste projeto. 
 
 ### Deployment
 
@@ -35,7 +35,7 @@ Para fazer deploy, rode na pasta do projeto pai:
 
 ``mvn clean install``
 
-Tendo certeza de apontar a variável ``pdi.home`` para a sua instalação do Kettle 8.1.
+Tendo certeza de apontar a variável ``pdi.home`` para a sua instalação do Kettle 9.2.
 
 ## Contribuição
 
