@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="copy-files-to-kettle"  >
 <target name="copy-files-to-kettle">
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\GraphSemanticLevelMarker\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSemanticLevelMarker"/>
-  <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSemanticLevelMarker" overwrite="true">
-    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\GraphSemanticLevelMarker/etc"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\GraphSemanticLevelMarker\etc\*.[png,xml,properties] to C:/Users/jok19/Downloads/data-integration/plugins/steps/GraphSemanticLevelMarker"/>
+  <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/GraphSemanticLevelMarker" overwrite="true">
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\GraphSemanticLevelMarker/etc"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\GraphSemanticLevelMarker\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSemanticLevelMarker"/>
-  <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSemanticLevelMarker/lib" overwrite="true">
-    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\GraphSemanticLevelMarker\target/lib"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\GraphSemanticLevelMarker\libs\*.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/GraphSemanticLevelMarker"/>
+  <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/GraphSemanticLevelMarker/lib" overwrite="true">
+    <fileset includes="**/*.jar" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\GraphSemanticLevelMarker\target/lib"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\GraphSemanticLevelMarker\target\GraphSemanticLevelMarker-1.0.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSemanticLevelMarker"/>
-  <copy file="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\GraphSemanticLevelMarker\target/GraphSemanticLevelMarker-1.0.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSemanticLevelMarker/GraphSemanticLevelMarker.jar" overwrite="true"/>
-  <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/GraphSemanticLevelMarker" value="3.17.0" token="{apache.jena.version}">
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\GraphSemanticLevelMarker\target\GraphSemanticLevelMarker-1.0.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/GraphSemanticLevelMarker"/>
+  <copy file="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\GraphSemanticLevelMarker\target/GraphSemanticLevelMarker-1.0.jar" tofile="C:/Users/jok19/Downloads/data-integration/plugins/steps/GraphSemanticLevelMarker/GraphSemanticLevelMarker.jar" overwrite="true"/>
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/GraphSemanticLevelMarker" value="3.17.0" token="{apache.jena.version}">
     <include name="plugin.xml"/>
   </replace>
 </target>

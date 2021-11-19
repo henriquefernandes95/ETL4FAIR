@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="copy-files-to-kettle"  >
 <target name="copy-files-to-kettle">
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlEndpoint\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint"/>
-  <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint" overwrite="true">
-    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlEndpoint/etc"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlEndpoint\etc\*.[png,xml,properties] to C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlEndpoint"/>
+  <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlEndpoint" overwrite="true">
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlEndpoint/etc"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlEndpoint\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint"/>
-  <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint/lib" overwrite="true">
-    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlEndpoint\target/lib"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlEndpoint\libs\*.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlEndpoint"/>
+  <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlEndpoint/lib" overwrite="true">
+    <fileset includes="**/*.jar" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlEndpoint\target/lib"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlEndpoint\target\SparqlEndpoint-1.1.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint"/>
-  <copy file="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlEndpoint\target/SparqlEndpoint-1.1.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint/SparqlEndpoint.jar" overwrite="true"/>
-  <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint" value="1.4.18" token="{xstream.version}">
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlEndpoint\target\SparqlEndpoint-1.1.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlEndpoint"/>
+  <copy file="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlEndpoint\target/SparqlEndpoint-1.1.jar" tofile="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlEndpoint/SparqlEndpoint.jar" overwrite="true"/>
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlEndpoint" value="1.4.18" token="{xstream.version}">
     <include name="plugin.xml"/>
   </replace>
-  <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint" value="1.1.3.1" token="{xmlpull.version}">
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlEndpoint" value="1.1.3.1" token="{xmlpull.version}">
     <include name="plugin.xml"/>
   </replace>
-  <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint" value="3.17.0" token="{apache.jena.version}">
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlEndpoint" value="3.17.0" token="{apache.jena.version}">
     <include name="plugin.xml"/>
   </replace>
-  <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint" value="0.15.0" token="{apache.libthrift.version}">
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlEndpoint" value="0.15.0" token="{apache.libthrift.version}">
     <include name="plugin.xml"/>
   </replace>
-  <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlEndpoint" value="1.21" token="{apache.commons-compress.version}">
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlEndpoint" value="1.21" token="{apache.commons-compress.version}">
     <include name="plugin.xml"/>
   </replace>
 </target>

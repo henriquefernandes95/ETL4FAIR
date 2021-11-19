@@ -2,47 +2,53 @@
 <project name="maven-antrun-" default="i18n-hack"  >
 <target name="i18n-hack">
   <echo message="Copying i18n files"/>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/Annotator/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/src/main/java"/>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/Annotator/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/LoadTripleFile/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/src/main/java"/>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/LoadTripleFile/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/DataCube/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/src/main/java"/>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/DataCube/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/DataPropertyMapping/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/src/main/java"/>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/DataPropertyMapping/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/GraphTriplify/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/src/main/java"/>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/FairDataRetriever/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/GraphSemanticLevelMarker/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/src/main/java"/>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/FairDataLoader/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/GraphSparqlEndpoint/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/src/main/java"/>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/GraphTriplify/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/ntriplegenerator/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/src/main/java"/>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/GraphSemanticLevelMarker/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/ObjectPropertyMapping/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/src/main/java"/>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/GraphSparqlEndpoint/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/OwlInput/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/src/main/java"/>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/ntriplegenerator/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/SparqlEndpoint/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/src/main/java"/>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/ObjectPropertyMapping/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/SparqlRunQuery/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/src/main/java"/>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/OwlInput/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/SparqlUpdateOutput/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/src/main/java"/>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/SparqlEndpoint/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
   </copy>
-  <copy todir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/TurtleGenerator/src/main/java" overwrite="true">
-    <fileset includes="**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins/src/main/java"/>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/SparqlRunQuery/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
+  </copy>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/SparqlUpdateOutput/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
+  </copy>
+  <copy todir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/TurtleGenerator/src/main/java" overwrite="true">
+    <fileset includes="**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins/src/main/java"/>
   </copy>
 </target>
 </project>

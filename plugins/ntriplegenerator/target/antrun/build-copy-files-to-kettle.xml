@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="copy-files-to-kettle"  >
 <target name="copy-files-to-kettle">
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\ntriplegenerator\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/ntriplegenerator"/>
-  <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/ntriplegenerator" overwrite="true">
-    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\ntriplegenerator/etc"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\ntriplegenerator\etc\*.[png,xml,properties] to C:/Users/jok19/Downloads/data-integration/plugins/steps/ntriplegenerator"/>
+  <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/ntriplegenerator" overwrite="true">
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\ntriplegenerator/etc"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\ntriplegenerator\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/ntriplegenerator"/>
-  <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/ntriplegenerator/lib" overwrite="true">
-    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\ntriplegenerator\target/lib"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\ntriplegenerator\libs\*.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/ntriplegenerator"/>
+  <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/ntriplegenerator/lib" overwrite="true">
+    <fileset includes="**/*.jar" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\ntriplegenerator\target/lib"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\ntriplegenerator\target\ntriplegenerator-1.1.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/ntriplegenerator"/>
-  <copy file="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\ntriplegenerator\target/ntriplegenerator-1.1.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/ntriplegenerator/ntriplegenerator.jar" overwrite="true"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\ntriplegenerator\target\ntriplegenerator-1.1.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/ntriplegenerator"/>
+  <copy file="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\ntriplegenerator\target/ntriplegenerator-1.1.jar" tofile="C:/Users/jok19/Downloads/data-integration/plugins/steps/ntriplegenerator/ntriplegenerator.jar" overwrite="true"/>
 </target>
 </project>

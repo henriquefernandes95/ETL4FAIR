@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="copy-files-to-kettle"  >
 <target name="copy-files-to-kettle">
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\TurtleGenerator\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/TurtleGenerator"/>
-  <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/TurtleGenerator" overwrite="true">
-    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\TurtleGenerator/etc"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\TurtleGenerator\etc\*.[png,xml,properties] to C:/Users/jok19/Downloads/data-integration/plugins/steps/TurtleGenerator"/>
+  <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/TurtleGenerator" overwrite="true">
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\TurtleGenerator/etc"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\TurtleGenerator\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/TurtleGenerator"/>
-  <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/TurtleGenerator/lib" overwrite="true">
-    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\TurtleGenerator\target/lib"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\TurtleGenerator\libs\*.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/TurtleGenerator"/>
+  <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/TurtleGenerator/lib" overwrite="true">
+    <fileset includes="**/*.jar" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\TurtleGenerator\target/lib"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\TurtleGenerator\target\TurtleGenerator-1.1.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/TurtleGenerator"/>
-  <copy file="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\TurtleGenerator\target/TurtleGenerator-1.1.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/TurtleGenerator/TurtleGenerator.jar" overwrite="true"/>
-  <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/TurtleGenerator" value="1.4.18" token="{xstream.version}">
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\TurtleGenerator\target\TurtleGenerator-1.1.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/TurtleGenerator"/>
+  <copy file="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\TurtleGenerator\target/TurtleGenerator-1.1.jar" tofile="C:/Users/jok19/Downloads/data-integration/plugins/steps/TurtleGenerator/TurtleGenerator.jar" overwrite="true"/>
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/TurtleGenerator" value="1.4.18" token="{xstream.version}">
     <include name="plugin.xml"/>
   </replace>
-  <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/TurtleGenerator" value="1.1.3.1" token="{xmlpull.version}">
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/TurtleGenerator" value="1.1.3.1" token="{xmlpull.version}">
     <include name="plugin.xml"/>
   </replace>
 </target>

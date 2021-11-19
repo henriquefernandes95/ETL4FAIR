@@ -11,6 +11,14 @@
 			<organization>UFRJ (PPGI/GRECO)</organization>
 			<organizationUrl>http://greco.ppgi.ufrj.br</organizationUrl>
 		</developer>
+
+		<developer>
+			<id>henrique.rodrigues</id>
+			<name>Henrique Fernandes Rodrigues</name>
+			<email>hfr@gmx.co.uk</email>
+			<organization>UFRJ (DCC/GRECO)</organization>
+			<organizationUrl>https://www.dcc.ufrj.br/</organizationUrl>
+		</developer>
 	</developers>
 	
 	<groupId>br.ufrj.ppgi.greco.kettle</groupId>
@@ -46,6 +54,12 @@
 									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
 								</copy>
 								<copy todir="${basedir}/DataPropertyMapping/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+								<copy todir="${basedir}/FairDataRetriever/src/main/java" overwrite="true">
+									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
+								</copy>
+								<copy todir="${basedir}/FairDataLoader/src/main/java" overwrite="true">
 									<fileset dir="${basedir}/src/main/java" includes="**/*.properties" />
 								</copy>
 								<copy todir="${basedir}/GraphTriplify/src/main/java" overwrite="true">
@@ -111,7 +125,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 
 
-		<pdi.home>E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration</pdi.home>
+		<pdi.home>C:/Users/jok19/Downloads/data-integration</pdi.home>
 		<pdi.plugin.dir>plugins/steps/${project.name}</pdi.plugin.dir>
 		<pdi.plugin.lib_name>${project.artifactId}</pdi.plugin.lib_name>
 
@@ -257,6 +271,12 @@
 			<version>${graphdb.version}</version>
 		</dependency>
 
+		<dependency>
+    		<groupId>org.json</groupId>
+    		<artifactId>json</artifactId>
+    		<version>${json.version}</version>
+		</dependency>
+
 	</dependencies>
 
 
@@ -265,6 +285,8 @@
 		<module>LoadTripleFile</module>
 		<module>DataCube</module>
 		<module>DataPropertyMapping</module>
+		<module>FairDataRetriever</module>
+		<module>FairDataLoader</module>
 		<module>GraphTriplify</module>
 		<module>GraphSemanticLevelMarker</module>
 		<module>GraphSparqlEndpoint</module>

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="copy-files-to-kettle"  >
 <target name="copy-files-to-kettle">
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlUpdateOutput\etc\*.[png,xml,properties] to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput"/>
-  <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput" overwrite="true">
-    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlUpdateOutput/etc"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlUpdateOutput\etc\*.[png,xml,properties] to C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlUpdateOutput"/>
+  <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlUpdateOutput" overwrite="true">
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlUpdateOutput/etc"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlUpdateOutput\libs\*.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput"/>
-  <copy todir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput/lib" overwrite="true">
-    <fileset includes="**/*.jar" dir="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlUpdateOutput\target/lib"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlUpdateOutput\libs\*.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlUpdateOutput"/>
+  <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlUpdateOutput/lib" overwrite="true">
+    <fileset includes="**/*.jar" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlUpdateOutput\target/lib"/>
   </copy>
-  <echo message="Copying E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlUpdateOutput\target\SparqlUpdateOutput-1.1.jar to E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput"/>
-  <copy file="E:\Documentos\UFRJ\TCC\ETL4FAIR\ETL4FAIR\plugins\SparqlUpdateOutput\target/SparqlUpdateOutput-1.1.jar" tofile="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput/SparqlUpdateOutput.jar" overwrite="true"/>
-  <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput" value="3.17.0" token="{apache.jena.version}">
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlUpdateOutput\target\SparqlUpdateOutput-1.1.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlUpdateOutput"/>
+  <copy file="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlUpdateOutput\target/SparqlUpdateOutput-1.1.jar" tofile="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlUpdateOutput/SparqlUpdateOutput.jar" overwrite="true"/>
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlUpdateOutput" value="3.17.0" token="{apache.jena.version}">
     <include name="plugin.xml"/>
   </replace>
-  <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput" value="2.4" token="{any23.version}">
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlUpdateOutput" value="2.4" token="{any23.version}">
     <include name="plugin.xml"/>
   </replace>
-  <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput" value="4.4.14" token="{apache.httpcore.version}">
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlUpdateOutput" value="4.4.14" token="{apache.httpcore.version}">
     <include name="plugin.xml"/>
   </replace>
-  <replace dir="E:\Documentos\UFRJ\TCC\INSTALADORES\data-integration/plugins/steps/SparqlUpdateOutput" value="4.5.13" token="{apache.httpclient.version}">
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlUpdateOutput" value="4.5.13" token="{apache.httpclient.version}">
     <include name="plugin.xml"/>
   </replace>
 </target>
