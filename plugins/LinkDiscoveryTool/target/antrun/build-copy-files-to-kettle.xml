@@ -11,7 +11,7 @@
   </copy>
   <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\LinkDiscoveryTool\target\LinkDiscoveryTool-1.0-SNAPSHOT.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/LinkDiscoveryTool"/>
   <copy file="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\LinkDiscoveryTool\target/LinkDiscoveryTool-1.0-SNAPSHOT.jar" tofile="C:/Users/jok19/Downloads/data-integration/plugins/steps/LinkDiscoveryTool/LinkDiscoveryTool.jar" overwrite="true"/>
-  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/LinkDiscoveryTool" value="1.4.18" token="{xstream.version}">
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/LinkDiscoveryTool" value="1.4.10" token="{xstream.version}">
     <include name="plugin.xml"/>
   </replace>
   <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/LinkDiscoveryTool" value="1.1.3.1" token="{xmlpull.version}">

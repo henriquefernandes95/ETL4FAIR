@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+   id="FairDataPointLoader"
+   iconfile="iconFairDataPointLoader.png"
+   description="Fair Data Point Loader"
+   tooltip="Insert triples in a Triple Store (e.g. Virtuoso) through a SPARQL 1.1 Endpoint."
+   category="LinkedDataBR"
+   classname="br.ufrj.ppgi.greco.kettle.FairDataPointLoaderStepMeta">
+   <libraries>
+		<library name="FairDataPointLoader.jar"/>
+		<library name="lib/KettlePluginTools-1.0.jar"/>
+		<library name="lib/httpcore-{apache.httpcore.version}.jar"/>
+		<library name="lib/httpclient-{apache.httpclient.version}.jar"/>
+		<library name="lib/httpclient-cache-{apache.httpclient.version}.jar"/>
+		<library name="lib/jena-core-{apache.jena.version}.jar"/>
+		<library name="lib/jena-base-{apache.jena.version}.jar"/>
+		<library name="lib/jena-shaded-guava-{apache.jena.version}.jar"/>
+    <library name="lib/eclipse-rdf4j-{rdf4j.version}-onejar.jar"/>
+    <library name="lib/json-{json.version}.jar"/>
+    </libraries>
+    <localized_category>
+     <category locale="en_US">LinkedDataBR</category>
+     <category locale="pt_BR">LinkedDataBR</category>
+   </localized_category>
+   <localized_description>
+     <description locale="en_US">Fair Data Point Loader</description>
+    <description locale="pt_BR">Fair Data Point Loader</description>
+   </localized_description>
+   <localized_tooltip>
+     <tooltip locale="en_US">Insert triples in a Triple Store (e.g. Virtuoso) through a SPARQL 1.1 Endpoint.</tooltip>
+    <tooltip locale="pt_BR">Insere triplas em um banco de triplas através de um Endpoint SPARQL 1.1.</tooltip>
+   </localized_tooltip>
+</plugin>

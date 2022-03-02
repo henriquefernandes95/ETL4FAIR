@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="copy-files-to-kettle"  >
+<target name="copy-files-to-kettle">
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\FairDataPointLoader\etc\*.[png,xml,properties] to C:/Users/jok19/Downloads/data-integration/plugins/steps/FairDataPointLoader"/>
+  <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/FairDataPointLoader" overwrite="true">
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\FairDataPointLoader/etc"/>
+  </copy>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\FairDataPointLoader\libs\*.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/FairDataPointLoader"/>
+  <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/FairDataPointLoader/lib" overwrite="true">
+    <fileset includes="**/*.jar" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\FairDataPointLoader\target/lib"/>
+  </copy>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\FairDataPointLoader\target\FairDataPointLoader-1.0.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/FairDataPointLoader"/>
+  <copy file="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\FairDataPointLoader\target/FairDataPointLoader-1.0.jar" tofile="C:/Users/jok19/Downloads/data-integration/plugins/steps/FairDataPointLoader/FairDataPointLoader.jar" overwrite="true"/>
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/FairDataPointLoader" value="3.17.0" token="{apache.jena.version}">
+    <include name="plugin.xml"/>
+  </replace>
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/FairDataPointLoader" value="4.4.14" token="{apache.httpcore.version}">
+    <include name="plugin.xml"/>
+  </replace>
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/FairDataPointLoader" value="4.5.13" token="{apache.httpclient.version}">
+    <include name="plugin.xml"/>
+  </replace>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\FairDataPointLoader\rdf4jlib\*.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/FairDataPointLoader/lib"/>
+  <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/FairDataPointLoader/lib" overwrite="true">
+    <fileset includes="**/*.jar" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\FairDataPointLoader/rdf4jlib"/>
+  </copy>
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/FairDataPointLoader" value="3.7.1" token="{rdf4j.version}">
+    <include name="plugin.xml"/>
+  </replace>
+</target>
+</project>
